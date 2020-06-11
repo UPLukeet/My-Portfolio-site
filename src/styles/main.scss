@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+//Navbar
+@import './partials/Nav-scss/Nav';
+
+//Navbar_DrawerButton
+@import './partials/Nav-scss/DrawerButton';
+
+//Navbar_SideDrawer
+@import './partials/Nav-scss/SideDrawer';
+
+//Site backdrop
+@import './partials/Nav-scss/Backdrops';

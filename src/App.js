@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import './App.css';
 
 //Pages/components
-import About from './components/About'
+import About from './components/About';
+import Nav from './components/Navigation/Nav';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch >
+          <Nav />
           <Route path='/' component={About} exact />
         </Switch>
       </BrowserRouter>
