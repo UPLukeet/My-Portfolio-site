@@ -10,14 +10,11 @@ const Nav = props => (
             <div className='nav-drawer-button'>
                 <DrawerButton click={props.drawerClickHandler} />
             </div>
-            <div className='toolbar_logo'><li>Simplyfit</li></div>
+            <div className='toolbar_logo'><li>My Portfolio</li></div>
             <div className='spacer'/>
             <div className='toolbar_nav-items'>
                 <ul>
-                <li><Link to='/'>Main page</Link></li>
-                <li><Link to='/workout_page'>Workout page</Link></li>
-                <li><Link to='/setup_page'>Setup page</Link></li>
-                <li><Link to='/settings_page'>Settings page</Link></li>
+                <li><Link to='/'>About</Link></li>
                 </ul>
             </div>
         </nav>
