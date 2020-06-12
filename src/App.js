@@ -26,6 +26,7 @@ function App() {
         <Nav drawerClickHandler={drawerToggleClickHandler} />
         <SideDrawer sidedrawerClickHandler={sideDrawerCloseHandler} show={sideDrawerOpen} />
         {sideDrawerOpen && (<Backdrop click={sideDrawerCloseHandler} />)}
+        <div className='App_margin' />
         <Switch >
           <Route path='/' component={About} exact />
         </Switch>
