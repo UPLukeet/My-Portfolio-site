@@ -16,6 +16,14 @@ code {
   padding-top: 56px;
 }
 
+.loading_transition{
+  transition: opacity .4s ease-in-out;
+  opacity: 0;
+}
+.loading_transition.fade{
+  opacity: 1;
+}
+
 //Navbar
 @import './partials/Nav-scss/Nav';
 
