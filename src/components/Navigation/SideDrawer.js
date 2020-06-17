@@ -10,9 +10,11 @@ const sideDrawer = props => {
     }
     return (<nav className={drawerClasses}>
         <div className='sidedraw-top'>
+            <h1>My Portfolio</h1>
         </div>
         <ul>
-        <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/' exact activeClassName='current'><li>about</li></NavLink>
+        <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/' exact activeClassName='current'><li>About</li></NavLink>
+        <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/test' exact activeClassName='current'><li>Test</li></NavLink>
         </ul>
     </nav>);
 
