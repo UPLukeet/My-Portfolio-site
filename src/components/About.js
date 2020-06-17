@@ -12,15 +12,13 @@ function About() {
                 console.log('play animation')
             }, 100);
         }
-        return () => {
-            document.body.style.overflow = 'unset';
-        }
-
     }, []);
 
-    return(
-        <div className={loading_animation ? 'loading_transition fade' : 'loading_transition'}>
-            <p>About page</p>
+    const textTransition = loading_animation ? 'loading_transition ease' : 'loading_transition';
+
+    return (
+        <div className='aboutStyles'>
+                <p className={textTransition}>About page</p>
         </div>
     )
 }

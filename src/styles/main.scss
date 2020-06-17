@@ -13,15 +13,24 @@ code {
 }
 
 .App_margin {
-  padding-top: 56px;
+  padding-top: 60px;
 }
 
 .loading_transition{
   transition: opacity .4s ease-in-out;
   opacity: 0;
 }
-.loading_transition.fade{
+.loading_transition.ease{
   opacity: 1;
+}
+
+
+@media only screen and (min-width: 640px) {
+
+  .App_margin{
+    padding-top: 0;
+  }
+
 }
 
 //Navbar
@@ -35,3 +44,6 @@ code {
 
 //Site backdrop
 @import './partials/Nav-scss/Backdrops';
+
+//About page
+@import './partials/Pages/about.scss'
