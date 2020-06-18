@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import MinimalMe from '../assets/MinimalMe_icon.svg';
 
 function About() {
 
@@ -14,11 +15,15 @@ function About() {
         }
     }, [loading_animation]);
 
-    const textTransition = loading_animation ? 'loading_transition ease' : 'loading_transition';
+    const textTransition = loading_animation ? 'text_transition ease' : 'text_transition';
+    const elementTransition = loading_animation ? 'element_transition ease' : 'element_transition';
 
     return (
         <div className='aboutStyles'>
-                <p className={textTransition}>About page</p>
+                <div className="aboutHead">
+                    <img src={MinimalMe}/>
+                    <h1 className={textTransition}>About me</h1>
+                </div>
         </div>
     )
 }
