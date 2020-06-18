@@ -32,8 +32,8 @@ function Nav(props) {
                 <div className='spacer'/>
                 <div className='toolbar_nav-items'>
                     <ul>
-                    <NavLink to='/' exact activeClassName='navCurrent'><li>About</li></NavLink>
-                    <NavLink to='/test' exact activeClassName='navCurrent'><li>Test</li></NavLink>
+                    <NavLink className='noSelect' to='/' exact activeClassName='navCurrent'><li>About</li></NavLink>
+                    <NavLink className='noSelect' to='/test' exact activeClassName='navCurrent'><li>Test</li></NavLink>
                     </ul>
                 </div>
             </nav>

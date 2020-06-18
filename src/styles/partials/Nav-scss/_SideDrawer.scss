@@ -41,14 +41,16 @@
   padding-inline-start: 0;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+
   li {
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 30vh;
+    justify-content: center;
   }
 
   a {
-    transition: 0.2s ease-in;
+    transition: 0.15s ease-in;
     color: #7510f7;
     box-shadow: 0 0 0 2.5px #7510f7;
     font-size: 1.2rem;
@@ -60,7 +62,7 @@
 
   a:active,
   a:hover {
-    transition: 0.12s ease-in;
+    transition: 0.15s ease-in;
     color: white;
     background: #7510f7;
   }
