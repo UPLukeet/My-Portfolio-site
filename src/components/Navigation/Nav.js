@@ -18,7 +18,7 @@ function Nav(props) {
             document.body.style.overflow = 'unset';
         }
 
-    }, []);
+    }, [loading_animation]);
 
 
    return (
@@ -33,7 +33,9 @@ function Nav(props) {
                 <div className='toolbar_nav-items'>
                     <ul>
                     <NavLink className='noSelect' to='/' exact activeClassName='navCurrent'><li>About</li></NavLink>
-                    <NavLink className='noSelect' to='/test' exact activeClassName='navCurrent'><li>Test</li></NavLink>
+                    <NavLink className='noSelect' to='/web' exact activeClassName='navCurrent'><li>Web & App</li></NavLink>
+                    <NavLink className='noSelect' to='/games' exact activeClassName='navCurrent'><li>Games</li></NavLink>
+                    <NavLink className='noSelect' to='/adobe' exact activeClassName='navCurrent'><li>Adobe</li></NavLink>
                     </ul>
                 </div>
             </nav>

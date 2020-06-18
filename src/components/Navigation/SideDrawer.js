@@ -13,8 +13,10 @@ const sideDrawer = props => {
             <h1>My Portfolio</h1>
         </div>
         <ul>
-        <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/' exact activeClassName='current'><li>About</li></NavLink>
-        <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/test' exact activeClassName='current'><li>Test</li></NavLink>
+            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/' exact activeClassName='current'><li>About</li></NavLink>
+            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/web' activeClassName='current'><li>Web & App</li></NavLink>
+            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/games' activeClassName='current'><li>Games</li></NavLink>
+            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/adobe' activeClassName='current'><li>Adobe</li></NavLink>
         </ul>
     </nav>);
 

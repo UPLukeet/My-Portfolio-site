@@ -12,7 +12,7 @@ function About() {
                 console.log('play animation')
             }, 100);
         }
-    }, []);
+    }, [loading_animation]);
 
     const textTransition = loading_animation ? 'loading_transition ease' : 'loading_transition';
 

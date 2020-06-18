@@ -17,8 +17,8 @@
 }
 
 .toolbar_logo {
+    visibility: hidden;
     li {
-        font-family: "Open Sans", sans-serif;
         color: black;
         text-decoration: none;
         font-size: 1.5rem;
@@ -66,6 +66,10 @@
 
     .toolbar_nav {
         flex-direction: column;
+    }
+
+    .toolbar_logo {
+       visibility: visible;
     }
 
     .toolbar_nav-items {
