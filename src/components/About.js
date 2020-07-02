@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import MinimalMe from '../assets/MinimalMe_icon.svg';
+import MinimalMe from '../assets/Mylogo.svg';
 
 function About() {
 
@@ -20,10 +20,14 @@ function About() {
 
     return (
         <div className='aboutStyles'>
+            <div className='aboutContainer'>
                 <div className="aboutHead">
-                    <img src={MinimalMe}/>
                     <h1 className={textTransition}>About me</h1>
                 </div>
+                <img src={MinimalMe} />
+                <div className='aboutText'>
+                </div>
+            </div>
         </div>
     )
 }
