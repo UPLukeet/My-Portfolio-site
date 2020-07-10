@@ -26,6 +26,7 @@ function About() {
                 </div>
                 <img src={MinimalMe} />
                 <div className='aboutText'>
+                    <p>I studied at the university of Portsmouth where I attained a BSC in Digital media.</p>
                 </div>
             </div>
         </div>

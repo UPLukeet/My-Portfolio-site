@@ -6,15 +6,15 @@
 
 .aboutContainer {
     position: relative;
-    width: 45%;
-    height: 100%;
-    margin-left: 4%;
+    width: 100%;
+    height: 85%;
+    margin-top: 0%;
 
     img {
         position: absolute;
         width: auto;
         margin-top: 2%;
-        height: 22%;
+        height: 21%;
         z-index: 10;
     }
 
@@ -23,11 +23,9 @@
         width: 100%;
         height: 20%;
         background: #7510f7;
-        margin-top: 2%;
-        border-radius: 3px;
         h1 {
-            padding-top: 2.5%;
-            font-size: 3rem;
+            margin-top: 0;
+            font-size: 2rem;
             color: white;
             text-align: center;
         }
@@ -37,15 +35,51 @@
         position: absolute;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         height: 80%;
-        width: 100%;
+        width: 85%;
+        margin-left: 7.5%;
         background: white;
         border-radius: 12px;
-        margin-top: 20%;
-        
+        margin-top: 27%;
+        p {
+            text-align: center;
+            margin-top: 14%;
+            color: rgba(10, 10, 10, 0.9);
+        }
     }
 }
 
 @media only screen and (min-width: 640px) {
-    .aboutStyles {
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .aboutContainer {
+        width: 55%;
+        height: 100%;
+        margin-left: 4%;
+
+        img {
+            height: 22%;
+        }
+
+        .aboutHead {
+            margin-top: 2%;
+            border-radius: 3px;
+            h1 {
+                padding-top: 2.5%;
+                font-size: 3rem;
+            }
+        }
+
+        .aboutText {
+            width: 100%;
+            margin-top: 20%;
+            margin-left: 0;
+            p {
+                margin-top: 10%;
+                color: rgba(10, 10, 10, 0.9);
+                font-size: 1.2rem;
+            }
+        }
     }
 }

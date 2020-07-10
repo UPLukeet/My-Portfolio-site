@@ -9,6 +9,10 @@ body {
   padding-top: 60px;
 }
 
+.App_space{
+
+}
+
 .text_transition {
   transition: opacity 0.4s ease-in-out;
   opacity: 0;
@@ -40,6 +44,26 @@ body {
 @media only screen and (min-width: 640px) {
   .App_margin {
     padding-top: 0;
+  }
+  .App_space {
+    width: 75%;
+    height: 100vh;
+    margin: 0;
+  }
+  .Nav_space {
+    float: right;
+    width: 25%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .App_space {
+    width: 85%;
+
+  }
+  .Nav_space {
+    width: 15%;
   }
 }
 
