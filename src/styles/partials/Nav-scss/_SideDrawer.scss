@@ -31,23 +31,22 @@
 
 .side-drawer ul {
   height: 100%;
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
   padding-inline-start: 0;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 
   li {
     display: flex;
     align-items: center;
-    width: 30vh;
     justify-content: center;
   }
 
   a {
+    width: 70%;
     transition: 0.15s ease-in;
     color: #7510f7;
     box-shadow: 0 0 0 2.5px #7510f7;

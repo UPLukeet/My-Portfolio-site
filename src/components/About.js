@@ -17,16 +17,34 @@ function About() {
 
     const textTransition = loading_animation ? 'text_transition ease' : 'text_transition';
     const elementTransition = loading_animation ? 'element_transition ease' : 'element_transition';
+    const bodyTransition = loading_animation ? 'mainBody_transition.ease' : 'mainBody_transition';
 
     return (
         <div className='aboutStyles'>
-            <div className='aboutContainer'>
+            <div className={loading_animation ? 'aboutContainer ease' : 'aboutContainer'}>
                 <div className="aboutHead">
                     <h1 className={textTransition}>About me</h1>
                 </div>
-                <img src={MinimalMe} />
+                <img className={elementTransition} src={MinimalMe} />
                 <div className='aboutText'>
-                    <p>I studied at the university of Portsmouth where I attained a BSC in Digital media.</p>
+                    <h2>Education</h2>
+                    <p className={textTransition}>I learned my trade during my time at the University of Portsmouth where I studied Digital media(Bsc), in which I learned about varies digital technologies.</p>
+                    <h2 className={textTransition}>Skills</h2>
+                    <p className={textTransition}></p>
+                    <h2 className={textTransition}>Hobbies</h2>
+                    <p className={textTransition}></p>
+                </div>
+            </div>
+            <div className='skillsStyles'>
+                <h1>Skills</h1>
+                <div>
+                    <h2>Front end</h2>
+                </div>
+                <div>
+                    <h2>Back end</h2>
+                </div>
+                <div>
+                    <h2>Design</h2>
                 </div>
             </div>
         </div>
