@@ -67,6 +67,14 @@ body {
 }
 
 @media only screen and (min-width: 1025px) {
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   .App_space {
     width: 85%;
 

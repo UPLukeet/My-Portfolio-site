@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MinimalMe from '../assets/Mylogo.svg';
+import { ReactComponent as DesignLogo } from '../assets/Design.svg';
+import { ReactComponent as DevLogo } from '../assets/Dev.svg';
 
 function About() {
 
@@ -37,15 +39,19 @@ function About() {
             </div>
             <div className='skillsStyles'>
                 <h1>Skills</h1>
-                <div>
-                    <h2>Front end</h2>
+                <div className='skillsBox'>
+                    <div>
+                        <DevLogo />
+                        <h2>Development</h2>
+                        <h3>Front end</h3>
+                        <h3>Back end</h3>
+                    </div>
+                    <div>
+                        <DesignLogo />
+                        <h2>Design</h2>
+                    </div>
                 </div>
-                <div>
-                    <h2>Back end</h2>
-                </div>
-                <div>
-                    <h2>Design</h2>
-                </div>
+
             </div>
         </div>
     )
