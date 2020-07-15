@@ -7,36 +7,29 @@
     background: #7510f7;
     height: 60px;
     z-index: 50;
-}
 
-.toolbar_nav {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding: 0 1rem;
-}
+    .toolbar_nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        padding: 0 1rem;
+    }
 
-.toolbar_logo {
-    visibility: hidden;
-    li {
-        color: black;
-        text-decoration: none;
-        font-size: 1.5rem;
-        list-style-type: none;
+    .toolbar_logo {
+        visibility: hidden;
+        li {
+            color: black;
+            text-decoration: none;
+            font-size: 1.5rem;
+            list-style-type: none;
+        }
+    }
+
+    .toolbar_nav-items {
+        visibility: hidden;
     }
 }
 
-.toolbar_nav-items {
-    visibility: hidden;
-}
-
-.sliding_transition {
-    opacity: 0;
-    transition: 0.25s ease-in;
-}
-.sliding_transition.ease {
-    opacity: 1;
-}
 
 @media only screen and (min-width: 640px) {
     .navCurrent {
@@ -54,81 +47,77 @@
     }
 
     .toolbar {
+        position: fixed;
         height: 100vh;
-        width: 100%;
+        width: 25%;
         top: 0;
         right: 0;
         background: none;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        z-index: 0;
-    }
 
-    .toolbar_nav {
-        flex-direction: column;
-    }
-
-    .toolbar_logo {
-        visibility: visible;
-    }
-
-    .toolbar_nav-items {
-        display: flex;
-        visibility: visible;
-        width: 100%;
-        ul {
-            display: flex;
-            width: 100%;
-            list-style: none;
-            padding: 0;
+        .toolbar_nav {
+            height: 100vh;
             flex-direction: column;
-            align-items: center;
-
-            li {
-                display: flex;
-                justify-content: center;
-            }
-
-            a {
-                width: 75%;
-                background-size: 100%;
-                font-size: 1.2rem;
-                transition: 0.3s ease-in;
-                color: #7510f7;
-                text-decoration: none;
-                padding: 5%;
-                box-shadow: 0 0 0 2.5px #7510f7;
-                border-radius: 30px;
-                margin: 5vh 0 1vh;
-            }
         }
 
-        a:hover,
-        a:active {
-            transition: 0.2s ease-in;
-            color: white;
-            background: #7510f7;
+        .toolbar_logo {
+            visibility: visible;
+        }
+
+        .toolbar_nav-items {
+            display: flex;
+            visibility: visible;
+            width: 100%;
+            ul {
+                display: flex;
+                width: 100%;
+                list-style: none;
+                padding: 0;
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                a {
+                    width: 85%;
+                    background-size: 100%;
+                    font-size: 1.2rem;
+                    transition: 0.3s ease-in;
+                    color: #7510f7;
+                    text-decoration: none;
+                    padding: 5%;
+                    box-shadow: 0 0 0 2.5px #7510f7;
+                    border-radius: 30px;
+                    margin: 5% 0 1vh;
+                }
+            }
+
+            a:hover,
+            a:active {
+                transition: 0.2s ease-in;
+                color: white;
+                background: #7510f7;
+            }
         }
     }
 
     .spacer {
         padding: 1vh;
     }
-
-    .sliding_transition {
-        opacity: 0 0.25s ease-in;
-        transform: translateY(-50px) 0.6s ease-in;
-    }
-    .sliding_transition.ease {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 @media only screen and (min-width: 1025px) {
-    .toolbar_nav-items {
-        ul {
-            a {
-                width: 75%;
+    .toolbar {
+        width: 15%;
+        .toolbar_nav-items {
+            ul {
+                a {
+                    width: 75%;
+                    margin: 5vh 0 1vh;
+                }
             }
         }
     }

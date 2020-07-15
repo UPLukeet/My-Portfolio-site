@@ -23,7 +23,6 @@ function Nav(props) {
 
 
    return (
-       <div className={loading_animation ? 'sliding_transition ease' : 'sliding_transition'}>
         <header className='toolbar'>
             <nav className='toolbar_nav'>
                 <div className='nav-drawer-button'>
@@ -41,7 +40,6 @@ function Nav(props) {
                 </div>
             </nav>
         </header>
-        </div>
     )
 }
 
