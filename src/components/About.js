@@ -15,6 +15,7 @@ function About() {
                 console.log('play animation')
             }, 100);
         }
+
     }, [loading_animation]);
 
     const textTransition = loading_animation ? 'text_transition ease' : 'text_transition';
