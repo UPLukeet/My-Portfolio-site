@@ -27,7 +27,7 @@ function About() {
                 <div className="aboutHead">
                     <h1 className={textTransition}>About me</h1>
                 </div>
-                <img className={elementTransition} src={MinimalMe} />
+                <img alt='me with laptop sat on a bench' className={elementTransition} src={MinimalMe} />
                 <div className='aboutText'>
                     <h2>Education</h2>
                     <p className={textTransition}>I learned my trade during my time at the University of Portsmouth where I studied Digital media(Bsc), in which I learned about varies digital technologies.</p>

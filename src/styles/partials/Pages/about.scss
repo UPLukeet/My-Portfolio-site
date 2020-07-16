@@ -80,8 +80,6 @@
             li {
                 list-style-type: none;
             }
-            h2 {
-            }
             h3 {
                 color: #7510f7;
             }
@@ -103,8 +101,7 @@
         .aboutContainer {
             .aboutHead {
                 height: 25vh;
-                h1 {
-                }
+
             }
 
             img {
@@ -115,10 +112,6 @@
 
             .aboutText {
                 margin-top: -3%;
-                h2 {
-                }
-                p {
-                }
             }
         }
 
@@ -126,8 +119,6 @@
             flex-direction: row;
             align-items: flex-start;
             height: 100vh;
-            h1 {
-            }
             div {
                 height: max-content;
                 svg {
