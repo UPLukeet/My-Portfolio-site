@@ -20,7 +20,6 @@ function About() {
 
     const textTransition = loading_animation ? 'text_transition ease' : 'text_transition';
     const elementTransition = loading_animation ? 'element_transition ease' : 'element_transition';
-    const bodyTransition = loading_animation ? 'mainBody_transition.ease' : 'mainBody_transition';
 
     return (
         <div className='aboutStyles'>
