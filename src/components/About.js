@@ -41,9 +41,14 @@ function About() {
                     <DesignLogo />
                     <h2>What I create</h2>
                     <p>I am passionate about building great things using the latest technologies available, here are some the things I enjoy making.</p>
-                    <h3></h3>
-
-                    <h3></h3>
+                    <h3>What I create:</h3>
+                    <p>Websites, Web apps, Games, Infographics, minimalistic Illustrations, Wireframes/designs</p>
+                    <h3>Tools I use:</h3>
+                    <li>React.js</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Github</li>
+                    <li>Netlify</li>
+                    <li>Adobe After Effects</li>
                 </div>
                 <div className={textTransition}>
                     <DevLogo />
