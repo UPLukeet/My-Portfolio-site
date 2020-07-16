@@ -31,28 +31,38 @@ function About() {
                 <div className='aboutText'>
                     <h2>Education</h2>
                     <p className={textTransition}>I learned my trade during my time at the University of Portsmouth where I studied Digital media(Bsc), in which I learned about varies digital technologies.</p>
-                    <h2 className={textTransition}>Skills</h2>
-                    <p className={textTransition}></p>
                     <h2 className={textTransition}>Hobbies</h2>
-                    <p className={textTransition}></p>
+                    <p className={textTransition}>One of my intrests is in technology I love to keep up with and read about the latest technologies released even if I can't afford them most the time, My main passion is health and fitness I love going to the gym, running, cycling along with this I enjoy cooking healthy meals.</p>
                 </div>
             </div>
-            <div className='skillsStyles'>
-                <h1>Skills</h1>
-                <div className='skillsBox'>
-                    <div>
-                        <DevLogo />
-                        <h2>Development</h2>
-                        <h3>Front end</h3>
-                        <h3>Back end</h3>
-                    </div>
-                    <div>
-                        <DesignLogo />
-                        <h2>Design</h2>
-                    </div>
-                </div>
 
+            <div className='skillsBox'>
+                <div className={textTransition}>
+                    <DesignLogo />
+                    <h2>What I create</h2>
+                    <p>I am passionate about building great things using the latest technologies available, here are some the things I enjoy making.</p>
+                    <h3></h3>
+
+                    <h3></h3>
+                </div>
+                <div className={textTransition}>
+                    <DevLogo />
+                    <h2>Development</h2>
+                    <p>A good craftsman never blames his tools, that being said here are the tools I use to make ideas a reality using code!</p>
+                    <h3>Languages I know:</h3>
+                    <p>HTML, CSS, Sass, Javascript, C#, PHP, Kotlin</p>
+                    <h3>Database Knowledge:</h3>
+                    <li>sql</li>
+                    <li>Firebase</li>
+                    <h3>Development Environments I use:</h3>
+                    <li>Visual Studio code</li>
+                    <li>Linux/Command line</li>
+                    <li>Unity</li>
+                    <li>Unreal Engine</li>
+                    <li>Android Studio</li>
+                </div>
             </div>
+
         </div>
     )
 }
