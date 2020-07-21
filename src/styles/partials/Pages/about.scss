@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: auto;
 
     .aboutContainer {
         transition: opacity 0.25s ease-in-out;
@@ -62,7 +62,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: max-content;
+        height: auto;
+        flex-basis: auto;
         text-align: center;
         margin: auto;
         margin-top: 0;
@@ -120,7 +121,7 @@
         .skillsBox {
             flex-direction: row;
             align-items: flex-start;
-            height: 100vh;
+            height: 100%;
             div {
                 height: max-content;
                 svg {
@@ -135,6 +136,7 @@
 
 @media only screen and (min-width: 1025px) {
     .aboutStyles {
+        height: 100vh;
         flex-direction: row;
         .aboutContainer {
             width: 50%;
