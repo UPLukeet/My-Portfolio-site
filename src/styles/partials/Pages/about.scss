@@ -59,9 +59,11 @@
     }
 
     .skillsBox {
-        display: inline-block;
+        display: flex;
         flex-direction: column;
         width: 100%;
+        height: auto;
+        flex-basis: auto;
         text-align: center;
         margin: auto;
         margin-top: 0;
@@ -117,7 +119,6 @@
         }
 
         .skillsBox {
-            display: flex;
             flex-direction: row;
             align-items: flex-start;
             height: 100vh;
