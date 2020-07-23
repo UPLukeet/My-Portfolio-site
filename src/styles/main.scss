@@ -86,10 +86,20 @@ body {
 @import "./partials/Nav-scss/Backdrops";
 
 //About page
-@import "./partials/Pages/about.scss";
+@import "./partials/Pages/about";
+
+//Webapps page
+@import "./partials//Pages/webapp";
+
+//Game page
+@import "./partials/game";
+
+//Adobe page
+@import "./partials/adobe";
 
 //Fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+

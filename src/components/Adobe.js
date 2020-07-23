@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Webapps() {
+function Adobe() {
 
     const [loading_animation, setloading_animation] = useState(false);
 
@@ -19,10 +19,10 @@ function Webapps() {
     const elementTransition = loading_animation ? 'element_transition ease' : 'element_transition';
 
     return (
-        <div className='webAppStyles'>
+        <div className='adobeStyles'>
 
         </div>
     )
 }
 
-export default Webapps;
+export default Adobe;

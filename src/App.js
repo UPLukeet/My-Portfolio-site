@@ -3,6 +3,9 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 //Pages/components
 import About from './components/About';
+import Webapps from './components/webApps'
+import Game from './components/Game'
+import Adobe from './components/Adobe'
 import Nav from './components/Navigation/Nav';
 import SideDrawer from './components/Navigation/SideDrawer';
 import Backdrop from './components/Navigation/Backdrop';
@@ -32,6 +35,9 @@ function App() {
         <div className='App_space'>
           <Switch >
             <Route path='/' component={About} exact />
+            <Route path='/web-apps' component={Webapps} />
+            <Route path='/game' component={Game} />
+            <Route path='/adobe' component={Adobe} />
           </Switch>
         </div>
       </BrowserRouter>
