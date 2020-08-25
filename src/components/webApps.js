@@ -15,7 +15,7 @@ function Webapps() {
         }
 
         const script = document.createElement('script');
-        script.src = 'node_modules/swipi-cards/dist/swipi-cards.js';
+        script.src = '@swipi-cards/dist/swipi-cards/swipi-cards.js';
 
         script.async = true;
 
@@ -39,15 +39,17 @@ function Webapps() {
     const textTransition = loading_animation ? 'text_transition ease' : 'text_transition';
     const elementTransition = loading_animation ? 'element_transition ease' : 'element_transition';
 
+    //swipicard script
+
     return (
         <div className='webAppStyles'>
-            <rg-swipi-cards stack-offset-y="0.3">
-            <rg-swipi-card>
-                <p>test1</p>
-            </rg-swipi-card>
-            <rg-swipi-card>
-                <p>test2</p>
-            </rg-swipi-card>
+            <rg-swipi-cards stack-offset-y="0.3" class='hydrated'>
+                <rg-swipi-card left-color='green' right-color='green' class='hydrated'>
+                    <p>test1</p>
+                </rg-swipi-card>
+                <rg-swipi-card left-color='green' right-color='green' class='hydrated'>
+                    <p>test2</p>
+                </rg-swipi-card>
             </rg-swipi-cards>
             <p>{filteredData.workName}</p>
             <button onClick={arrayLimiter}>Increase number</button>
