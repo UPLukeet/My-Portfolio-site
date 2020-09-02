@@ -43,13 +43,12 @@ function Webapps() {
 
     return (
         <div className='webAppStyles'>
-            <ReactSwing
-                className="stack"
-            >
-                <div>{filteredData.workName}</div>
-
-                <div>{filteredData2.workName}</div>
+            <ReactSwing className="stack">
+                {Data.map((Projects, index) => {
+                    return <div>{Projects.workName}</div>
+                })}
             </ReactSwing>
+
             <p>{filteredData.workName}</p>
             <button onClick={arrayLimiter}>Increase number</button>
         </div >
