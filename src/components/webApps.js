@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Data from '../Data/webApps_data';
 import ReactSwing from '../../node_modules/react-swing/dist/react-swing.js';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import Test from '../assets/about_backdrop.jpeg';
 
 function Webapps() {
@@ -30,12 +32,15 @@ function Webapps() {
             <ReactSwing className='Stack' ref={projectStack} throwout={(e) => console.log('throwout', e)}>
                 {Data.map((Projects, index) => {
                     return <div className='Cards'>
-                        <img src={Test}/>
+                    <Carousel showThumbs={false} infiniteLoop={true} swipeable={false}>
+                            <div><iframe width="100%" height="100%" src={Projects.videoAddress+'?autoplay=1'} allow='autoplay' frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+                            <div><img src={Test}/></div>
+                        </Carousel>
                         <div className='cardHead'>
-                        <h1>{Projects.workName}</h1>
-                        {Projects.workTech.map((Tech, index) => { return <p>Technology used: {Tech}</p> })}
+                            <h1>{Projects.workName}</h1>
+                            {Projects.workTech.map((Tech, index) => { return <p>Technology used: {Tech}</p> })}
                         </div>
-                        <p>Project Description: {Projects.workDescription}</p>
+                        <p>{Projects.workDescription}</p>
                     </div>
                 })}
             </ReactSwing>
