@@ -10,6 +10,9 @@ body {
   padding-top: 60px;
 }
 
+.App_space {
+display: flex;
+}
 
 .text_transition {
   transition: opacity 0.35s ease-in-out;

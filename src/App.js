@@ -31,8 +31,8 @@ function App() {
         </div>
         <SideDrawer sidedrawerClickHandler={sideDrawerCloseHandler} show={sideDrawerOpen} />
         {sideDrawerOpen && (<Backdrop click={sideDrawerCloseHandler} />)}
-        <div className='App_margin' />
         <div className='App_space'>
+        <div className='App_margin' />
           <Switch >
             <Route path='/' component={About} exact />
             <Route path='/web-apps' component={Webapps} />
