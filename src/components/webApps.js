@@ -36,12 +36,12 @@ function Webapps() {
     //set translate(0, 0) rotate(0) to return cards to origin
     return (
         <div className='webAppStyles'>
-            <ReactSwing className='Stack'  setStack={(stack) => setStack(stack)} throwout={cardThrown}>
+            <ReactSwing className='Stack' setStack={(stack) => setStack(stack)} throwout={cardThrown}>
                 {Data.map((Projects, index) => {
                     return <div className='Cards'>
-                        <Carousel showThumbs={false} infiniteLoop={true} swipeable={false}>
-                            <div><iframe width="100%" height="100%" src={Projects.videoAddress + '?autoplay=1'} allow='autoplay' frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+                        <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false}>
                             <div><img src={Test} /></div>
+                            <div className='iframeContainer'><iframe src={Projects.videoAddress + "?&mute=1&controls=0&fs=0&loop=1&showinfo=0&rel=0&enablejsapi=1"} frameborder="0"  allowfullscreen="allowfullscreen"></iframe></div>
                         </Carousel>
                         <div className='cardHead'>
                             <h1>{Projects.workName}</h1>
