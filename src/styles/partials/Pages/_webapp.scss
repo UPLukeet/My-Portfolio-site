@@ -3,7 +3,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: #FBFBFF;
+    background: #fbfbff;
     .Stack {
         width: 100%;
         height: 100vh;
@@ -22,6 +22,15 @@
         text-align: center;
         border-radius: 7px;
         overflow: hidden;
+
+        $OFFSET: 5px;
+
+        @for $i from 0 to 5 {
+            &:nth-child(#{$i + 1}) {
+                top: calc(#{$i} * #{$OFFSET});
+            }
+        }
+
         .cardHead {
             margin-top: 0;
             h1 {
