@@ -8,8 +8,7 @@ import Test from '../assets/about_backdrop.jpeg';
 function Webapps() {
 
     const [loading_animation, setloading_animation] = useState(false);
-    const projectStack = useRef();
-    const [cardCount, setCardCount] = useState(Data.length);
+    //const [cardCount, setCardCount] = useState(Data.length);
     const [stack, setStack] = useState(null);
 
 
@@ -17,14 +16,17 @@ function Webapps() {
         if (loading_animation === false) {
             setTimeout(() => {
                 setloading_animation(!loading_animation);
-                console.log()
             }, 100);
         }
     }, [loading_animation]);
 
+    useEffect(() => {
+        console.log(stack)
+    }, [stack]);
+
     //card effect on throw out
     const cardThrown = (targetCard) => {
-        console.log('throw out', targetCard);
+        console.log(stack);
 
     }
 
@@ -36,21 +38,23 @@ function Webapps() {
     //set translate(0, 0) rotate(0) to return cards to origin
     return (
         <div className='webAppStyles'>
-            <ReactSwing className='Stack' setStack={(stack) => setStack(stack)} throwout={cardThrown}>
-                {Data.map((Projects, index) => {
-                    return <div className='Cards'>
-                        <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false}>
-                            <div><img src={Test} /></div>
-                            <div className='iframeContainer'><iframe src={Projects.videoAddress + "?&mute=1&controls=0&fs=0&loop=1&showinfo=0&rel=0&enablejsapi=1"} frameborder="0"  allowfullscreen="allowfullscreen"></iframe></div>
-                        </Carousel>
-                        <div className='cardHead'>
-                            <h1>{Projects.workName}</h1>
-                            {Projects.workTech.map((Tech, index) => { return <p>Technology used: {Tech}</p> })}
+            <div className={textTransition}>
+                <ReactSwing className='Stack' setStack={(projectStack) => setStack(projectStack)} throwout={cardThrown}>
+                    {Data.map((Projects, index) => {
+                        return <div className='Cards'>
+                            <div className='cardHead'>
+                                <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false}>
+                                    <div><img src={Test} /></div>
+                                    <div className='iframeContainer'><iframe src={Projects.videoAddress + "?&mute=1&controls=0&fs=0&loop=1&showinfo=0&rel=0&enablejsapi=1"} frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+                                </Carousel>
+                                <h1>{Projects.workName}</h1>
+                                {Projects.workTech.map((Tech, index) => { return <p>{Tech}</p> })}
+                            </div>
+                            <p>{Projects.workDescription}</p>
                         </div>
-                        <p>{Projects.workDescription}</p>
-                    </div>
-                })}
-            </ReactSwing>
+                    })}
+                </ReactSwing>
+            </div>
         </div >
     )
 }
