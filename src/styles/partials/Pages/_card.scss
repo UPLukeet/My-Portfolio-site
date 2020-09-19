@@ -1,0 +1,188 @@
+
+//transition for cards
+.card_transition {
+    transition: transform 0.5s ease, opacity 0.6s ease;
+    transform: translatey(150px);
+    opacity: 0;
+  }
+  .card_transition.ease {
+    transform: translatey(0);
+    opacity: 1;
+  }
+
+.cardStyles {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #fbfbff;
+
+    //styling for cards
+    .Cards {
+        position: absolute;
+        width: 85%;
+        height: 85vh;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 11vh;
+        left: 0;
+        right: 0;
+        border-radius: 7px;
+        overflow: hidden;
+        background: #7510f7;
+        display: flex;
+        flex-direction: column;
+
+        //offsets cards
+        $OFFSET: 5px;
+
+        @for $i from 0 to 5 {
+            &:nth-child(#{$i + 1}) {
+                top: calc(#{$i} * #{$OFFSET});
+            }
+        }
+
+        //container for image/video box
+        .image-iframeContainer {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-grow: 1;
+            flex-basis: 0;
+            background: #141c3a;
+            overflow: hidden;
+
+            img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+                background-repeat: no-repeat;
+                margin: auto;
+            }
+
+            iframe {
+                position: absolute;
+                margin: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        }
+
+        .webButton {
+            position: relative;
+            margin-top: -30px;
+            width: 100%;
+            padding: 0;
+            z-index: 0;
+
+            svg {
+                width: 5vh;
+                height: auto;
+                transition: 0.3s ease-in;
+                background: white;
+                color:#7510f7;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                padding: 10px;
+                border-radius: 50%;
+                float: right;
+                margin-right: 5%;
+            }
+
+            svg:hover,
+            svg:active {
+                transition: 0.3s ease-in;
+                    color: white;
+                    background: #7510f7;
+            }
+        }
+
+        .test {
+            height: 300px;
+        }
+
+        //headings and text for the cards
+
+        h1 {
+            margin-left: 2.5%;
+            color: white;
+            width: 80%;
+            padding-right: 15%;
+            margin-bottom: 2px;
+            margin-top: -15px;
+            border-bottom: 0.8px solid white;
+        }
+
+        .techList {
+            margin: auto;
+            width: 90%;
+            color: white;
+            text-align: center;
+            font-size: 0.8rem;
+            margin-bottom: 0;
+            margin-top: 0;
+            background: none;
+        }
+        .descriptionContainer {
+            background: white;
+            width: 100%;
+            .description {
+                color: black;
+                width: 95%;
+                margin: auto;
+                font-size: 0.9rem;
+            }
+        }
+
+        //styling to fix the carousel
+        .carousel-root {
+            flex: 1;
+        }
+
+        .carousel {
+            z-index: 0;
+        }
+
+        .carousel,
+        .slider-wrapper,
+        .slider {
+            height: 100%;
+        }
+
+        .slide {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .carousel.carousel-slider {
+            .control-arrow {
+                padding: 15%;
+                opacity: 0%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .cardStyles {
+        .Cards {
+            margin-top: 10%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .cardStyles {
+        .Cards {
+            margin-top: 1%;
+            width: 50%;
+            height: 95vh;
+        }
+    }
+}
