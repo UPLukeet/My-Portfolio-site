@@ -53,7 +53,7 @@ function Game() {
                         return <div className='Cards'>
                             <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
                                 {Projects.Images && Projects.Images.map((Image, index) => { return <div className='image-iframeContainer'><img src={require("../assets/Port-images/Games/" + Image)} /></div> })}
-                                {Projects.videoAddress && <div className='image-iframeContainer'><ReactPlayer url={Projects.videoAddress} muted={true} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div>}
+                                {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div>})}
                             </Carousel>
                             {Projects.webAddress && <div className='webButton'><LinkIcon onClick=  { () => {window.open(Projects.webAddress);}}/></div>}
                             <h1>{Projects.workName}</h1>
