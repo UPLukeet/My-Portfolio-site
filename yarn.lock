@@ -5243,11 +5243,6 @@ gzip-size@5.1.1:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
-hammerjs@^2.0.4:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
-  integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
-
 handle-thing@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.1.tgz#857f79ce359580c340d43081cc648970d0bb234e"
@@ -7050,7 +7045,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.5, lodash@^4.6.1, lodash@~4.17.10:
+"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.5, lodash@~4.17.10:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -7977,6 +7972,11 @@ p-retry@^3.0.1:
   integrity sha512-XE6G4+YTTkT2a0UWb2kjZe8xNwf8bIbnqpc/IS/idOBVhyves0mK5OJgeocjx7q5pvX/6m23xuzVPYT1uGM73w==
   dependencies:
     retry "^0.12.0"
+
+p-sleep@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/p-sleep/-/p-sleep-1.1.0.tgz#a6c9333059b5103c3c0e46bcbba95a1f7969095b"
+  integrity sha512-bwP3GKZirBUYMtiUuBrheLUQdRXVeE/pmHOaLpNJzNfAD4b5AjDn6l823brXcQFade4G/g7GMNQ3KV86E8EaEw==
 
 p-try@^1.0.0:
   version "1.0.0"
@@ -9166,7 +9166,7 @@ querystringify@^2.1.1:
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
   integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
 
-raf@^3.1.0, raf@^3.4.1:
+raf@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
@@ -9386,13 +9386,12 @@ react-scripts@^3.4.3:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-swing@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/react-swing/-/react-swing-3.0.0.tgz#709fb1cc6452c4530a41cb632fddbe89b3fdcb15"
-  integrity sha512-oHkv709UJR8oct3kt11BFSMrnSzHw30a0bOXktgaewimspjQ5yJOEz5uFIvy2r9ClEiNuqvnzOt2t2H2g0HDwg==
+react-tinder-card@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-tinder-card/-/react-tinder-card-1.2.1.tgz#77a63d494afe541d36fe8162028885f9a2577929"
+  integrity sha512-jSjFslqK1vMseZv4pA3+/dzvauaTgfGC0hPkZDJSk/gWME49mnLXnit8u8iC8AYimrJ3HT/plOvlAhKYdgSXfg==
   dependencies:
-    babel-runtime "^6.26.0"
-    swing "^3.1.4"
+    p-sleep "^1.1.0"
 
 react-transition-group@^4.4.0:
   version "4.4.1"
@@ -9508,11 +9507,6 @@ realpath-native@^1.1.0:
   integrity sha512-wlgPA6cCIIg9gKz0fgAPjnzh4yR/LnXovwuo9hvyGvx3h8nX4+/iLZplfUWasXpqD8BdnGnP5njOFjkUwPzvjA==
   dependencies:
     util.promisify "^1.0.0"
-
-rebound@^0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/rebound/-/rebound-0.0.13.tgz#4a225254caf7da756797b19c5817bf7a7941fac1"
-  integrity sha1-SiJSVMr32nVnl7GcWBe/enlB+sE=
 
 recursive-readdir@2.2.2:
   version "2.2.2"
@@ -10169,11 +10163,6 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-sister@^3.0.0:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/sister/-/sister-3.0.2.tgz#bb3e39f07b1f75bbe1945f29a27ff1e5a2f26be4"
-  integrity sha512-p19rtTs+NksBRKW9qn0UhZ8/TUI9BPw9lmtHny+Y3TinWlOa9jWh9xB0AtPSdmOy49NJJJSSe0Ey4C7h0TrcYA==
-
 sisteransi@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
@@ -10719,18 +10708,6 @@ svgo@^1.0.0, svgo@^1.2.2:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swing@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/swing/-/swing-3.1.4.tgz#1aebb051bb8865be84a356ff4fc05dfcd870f04c"
-  integrity sha512-Qqjl2ncOV/0mtc6cjFs7iEJ4pFhDwyf9HMjSFAAS/67bIG6CthVjUxrhoi3h0XeQfoFu3VRTJCYkb8tqSMMPng==
-  dependencies:
-    hammerjs "^2.0.4"
-    lodash "^4.6.1"
-    raf "^3.1.0"
-    rebound "^0.0.13"
-    sister "^3.0.0"
-    vendor-prefix "^0.1.0"
-
 symbol-tree@^3.2.2:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
@@ -11225,11 +11202,6 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-
-vendor-prefix@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vendor-prefix/-/vendor-prefix-0.1.0.tgz#d7be53ab6e4879fb11f9ea33696e59c7dc29497c"
-  integrity sha1-175Tq25IefsR+eozaW5Zx9wpSXw=
 
 vendors@^1.0.0:
   version "1.0.4"

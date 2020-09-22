@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Data from '../Data/webApps_data';
-import ReactSwing from '../../node_modules/react-swing/dist/react-swing.js';
+import TinderCard from 'react-tinder-card';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ReactPlayer from 'react-player/youtube'
@@ -27,15 +27,18 @@ function Webapps() {
 
 
     //card effect on throw out
-    const cardThrown = (targetCard) => {
-        console.log(stack);
-
-    }
+    const onSwipe = (direction) => {
+        console.log('You swiped: ' + direction)
+      }
 
     const autoplayChange = () => {
         setSlideShow(!slideShow)
         console.log('playing!')
     }
+
+    const onCardLeftScreen = (Project_card) => {
+        console.log(Project_card + ' left the screen')
+      }
 
 
     const cardTransition = loading_animation ? 'card_transition ease' : 'card_transition';
@@ -46,9 +49,8 @@ function Webapps() {
     return (
         <div className='cardStyles'>
             <div className={cardTransition}>
-                <ReactSwing setStack={(projectStack) => setStack(projectStack)} throwout={cardThrown}>
                     {Data.map((Projects, index) => {
-                        return <div className='Cards'>
+                        return <TinderCard onSwipe={onSwipe} key={Projects.workName} preventSwipe={['up', 'down']}  onCardLeftScreen={() => onCardLeftScreen(Projects.workName)} className='Cards'>
                             <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
                                 {Projects.Images && Projects.Images.map((Image, index) => { return <div className='image-iframeContainer'><img alt='' src={require("../assets/Port-images/Web-Apps/" + Image)} /></div> })}
                                 {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div>})}
@@ -59,9 +61,8 @@ function Webapps() {
                             <div className='descriptionContainer'>
                                 <p className='description'>{Projects.workDescription}</p>
                             </div>
-                        </div>
+                        </TinderCard>
                     })}
-                </ReactSwing>
             </div>
         </div >
     )

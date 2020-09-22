@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Data from '../Data/Game_data';
-import ReactSwing from '../../node_modules/react-swing/dist/react-swing.js';
+import TinderCard from 'react-tinder-card';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ReactPlayer from 'react-player/youtube'
@@ -48,9 +48,9 @@ function Game() {
     return (
         <div className='cardStyles'>
             <div className={cardTransition}>
-                <ReactSwing setStack={(projectStack) => setStack(projectStack)} throwout={cardThrown}>
+
                     {Data.map((Projects, index) => {
-                        return <div className='Cards'>
+                        return <TinderCard className='Cards'>
                             <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
                                 {Projects.Images && Projects.Images.map((Image, index) => { return <div className='image-iframeContainer'><img alt='' src={require("../assets/Port-images/Games/" + Image)} /></div> })}
                                 {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div>})}
@@ -61,9 +61,8 @@ function Game() {
                             <div className='descriptionContainer'>
                                 <p className='description'>{Projects.workDescription}</p>
                             </div>
-                        </div>
+                        </TinderCard>
                     })}
-                </ReactSwing>
             </div>
         </div >
     )

@@ -18,7 +18,7 @@
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "react-swing": "^3.0.0",
+    "react-tinder-card": "^1.2.1",
     "ws": "^7.3.1"
   },
   "scripts": {
