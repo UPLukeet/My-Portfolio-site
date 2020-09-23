@@ -49,7 +49,7 @@ function Webapps() {
                             <h1>{Projects.workName}</h1>
                             {Projects.workTech.map((Tech, index) => { return <p key={Tech} className='techList'>{Tech}</p> })}
                             <div className='descriptionContainer'>
-                                <p className='description'>{Projects.workDescription}</p>
+                                <p className='description' >{Projects.workDescription}</p>
                             </div>
                         </TinderCard>
                     })}
