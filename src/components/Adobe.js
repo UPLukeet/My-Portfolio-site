@@ -9,8 +9,6 @@ import LinkIcon from '@material-ui/icons/Link';
 function Adobe() {
 
     const [loading_animation, setloading_animation] = useState(false);
-    //const [cardCount, setCardCount] = useState(Data.length);
-    const [stack, setStack] = useState(null);
     const [slideShow, setSlideShow] = useState(true);
 
     useEffect(() => {
@@ -20,17 +18,6 @@ function Adobe() {
             }, 100);
         }
     }, [loading_animation]);
-
-    useEffect(() => {
-        console.log(stack)
-    }, [stack]);
-
-
-    //card effect on throw out
-    const cardThrown = (targetCard) => {
-        console.log(stack);
-
-    }
 
     const autoplayChange = () => {
         setSlideShow(!slideShow)
@@ -48,14 +35,14 @@ function Adobe() {
         <div className='cardStyles'>
             <div className={cardTransition}>
                     {Data.map((Projects, index) => {
-                        return <TinderCard className='Cards'>
+                        return <TinderCard key={Projects.workName} className='Cards'>
                             <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
-                                {Projects.Images && Projects.Images.map((Image, index) => { return <div className='image-iframeContainer'><img alt='' src={require("../assets/Port-images/Adobe/" + Image)} /></div> })}
-                                {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div>})}
+                                {Projects.Images && Projects.Images.map((Image, index) => { return <div  key={Image} className='image-iframeContainer'><img loading="lazy" alt='Images of adobe projects' src={require("../assets/Port-images/Adobe/" + Image)} /></div> })}
+                                {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video} className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div>})}
                             </Carousel>
                             {Projects.webAddress && <div className='webButton'><LinkIcon onClick=  { () => {window.open(Projects.webAddress);}}/></div>}
                             <h1>{Projects.workName}</h1>
-                            {Projects.workTech.map((Tech, index) => { return <p className='techList'>{Tech}</p> })}
+                            {Projects.workTech.map((Tech, index) => { return <p key={Tech} className='techList'>{Tech}</p> })}
                             <div className='descriptionContainer'>
                                 <p className='description'>{Projects.workDescription}</p>
                             </div>
