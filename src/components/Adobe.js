@@ -37,7 +37,7 @@ function Adobe() {
                     {Data.map((Projects, index) => {
                         return <TinderCard key={Projects.workName} className='Cards'>
                             <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
-                                {Projects.Images && Projects.Images.map((Image, index) => { return <div  key={Image} className='image-iframeContainer'><img loading="lazy" alt='Images of adobe projects' src={require("../assets/Port-images/Adobe/" + Image)} /></div> })}
+                                {Projects.Images && Projects.Images.map((Image, index) => { return <div  key={Image} className='image-iframeContainer'><img alt='Images of adobe projects' src={require("../assets/Port-images/Adobe/" + Image)} /></div> })}
                                 {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video} className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div>})}
                             </Carousel>
                             {Projects.webAddress && <div className='webButton'><LinkIcon onClick=  { () => {window.open(Projects.webAddress);}}/></div>}
