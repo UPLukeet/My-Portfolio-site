@@ -10,6 +10,7 @@ function Adobe() {
 
     const [loading_animation, setloading_animation] = useState(false);
     const [slideShow, setSlideShow] = useState(true);
+    let [cardController, setCardController] = useState(3);
 
     useEffect(() => {
         if (loading_animation === false) {
@@ -34,7 +35,7 @@ function Adobe() {
     return (
         <div className='cardStyles'>
             <div className={cardTransition}>
-                    {Data.map((Projects, index) => {
+                    {Data.slice(0, cardController).map((Projects, index) => {
                         return <TinderCard key={Projects.workName} className='Cards'>
                             <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
                                 {Projects.Images && Projects.Images.map((Image, index) => { return <div  key={Image} className='image-iframeContainer'><img alt='Images of adobe projects' src={require("../assets/Port-images/Adobe/" + Image)} /></div> })}

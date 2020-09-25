@@ -37,9 +37,10 @@
         //offsets cards
         $OFFSET: 5px;
 
-        @for $i from 0 to 5 {
+        @for $i from 0 to 20 {
             &:nth-child(#{$i + 1}) {
                 top: calc(#{$i} * #{$OFFSET});
+                z-index: calc(#{$i} * -1);
             }
         }
 
