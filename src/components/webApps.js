@@ -3,7 +3,7 @@ import Data from '../Data/webApps_data';
 import TinderCard from 'react-tinder-card';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/youtube';
 import LinkIcon from '@material-ui/icons/Link';
 
 function Webapps() {
@@ -12,10 +12,10 @@ function Webapps() {
     const [slideShow, setSlideShow] = useState(true);
 
     //sets initial cards within the queue
-    let [cardQueue, setCardQueue] = useState([Data[0], Data[1], Data[2]]);
+    const [cardQueue, setCardQueue] = useState([Data[0], Data[1], Data[2]]);
 
     //sets the index of card that will be pushed into queue
-    let [cardQueueLength, setCardQueueLength] = useState(3);
+    const [cardQueueLength, setCardQueueLength] = useState(Data.length - 1);
 
     useEffect(() => {
         if (loading_animation === false) {
@@ -30,13 +30,27 @@ function Webapps() {
         console.log('playing!')
     }
 
-    const onCardLeftScreen = () => {
-        //removes card from front of queue
-        cardQueue.shift();
-        //iterates through cards(sets up loop)
-        setCardQueueLength(cardQueueLength < Data.length ? 0 : cardQueueLength + 1);
+    const CardLeftScreen = () => {
+
+        const dataIndex = cardQueueLength < Data.length - 1 ? cardQueueLength + 1 : 0;
+
+        //accesses queue without mutating state
+        const newCardQueue = [...cardQueue];
+
         //pushes a card to back of queue
-        cardQueue.push(Data[cardQueueLength]);
+        newCardQueue.push(Data[dataIndex]);
+
+        //removes card from front of queue
+        newCardQueue.shift();
+
+        //updates state
+        setCardQueueLength(dataIndex)
+        setCardQueue(newCardQueue)
+        
+        //sets slideshow to true
+        setSlideShow(true)
+
+        //console logs cards in arrays and the index of the card being pushed to back of queue
         console.log(cardQueue);
         console.log(cardQueueLength);
     }
@@ -48,7 +62,7 @@ function Webapps() {
         <div className='cardStyles'>
             <div className={cardTransition}>
                 {cardQueue.map((Projects, index) => {
-                    return <TinderCard key={Projects.workName} preventSwipe={['up', 'down']} onCardLeftScreen={onCardLeftScreen} className='Cards'>
+                    return <TinderCard key={Projects.workName} preventSwipe={['up', 'down']} onCardLeftScreen={CardLeftScreen} className='Cards'>
                         <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
                             {Projects.Images && Projects.Images.map((Image, index) => { return <div key={Image} className='image-iframeContainer'><img alt='Images of web apps' src={require("../assets/Port-images/Web-Apps/" + Image)} /></div> })}
                             {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video} className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
@@ -62,6 +76,7 @@ function Webapps() {
                     </TinderCard>
                 })}
             </div>
+            <button onClick={CardLeftScreen}>test</button>
         </div >
     )
 }
