@@ -58,18 +58,19 @@ function Webapps() {
 
     const cardTransition = loading_animation ? 'card_transition ease' : 'card_transition';
 
+
     return (
         <div className='cardStyles'>
             <div className={cardTransition}>
                 {cardQueue.map((Projects, index) => {
-                    return <TinderCard key={Projects.workName + Math.random()} preventSwipe={['up', 'down']} onCardLeftScreen={CardLeftScreen} className='Cards'>
+                    return <TinderCard key={Projects.workName + index} preventSwipe={['up', 'down']} onCardLeftScreen={CardLeftScreen} className='Cards'>
                         <Carousel showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
-                            {Projects.Images && Projects.Images.map((Image, index) => { return <div key={Image} className='image-iframeContainer'><img alt='Images of web apps' src={require("../assets/Card-images/Web-Apps/" + Image)} /></div> })}
-                            {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video} className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
+                            {Projects.Images && Projects.Images.map((Image, index) => { return <div key={Image + index} className='image-iframeContainer'><img alt='Images of web apps' src={require("../assets/Card-images/Web-Apps/" + Image)} /></div> })}
+                            {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video + index} className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
                         </Carousel>
                         {Projects.webAddress && <div className='webButton'><LinkIcon onClick={() => { window.open(Projects.webAddress); }} /></div>}
                         <h1>{Projects.workName}</h1>
-                        {Projects.workTech.map((Tech, index) => { return <p key={Tech} className='techList'>{Tech}</p> })}
+                        {Projects.workTech.map((Tech, index) => { return <p key={Tech + index} className='techList'>{Tech}</p> })}
                         <div className='descriptionContainer'>
                             <p className='description' >{Projects.workDescription}</p>
                         </div>
