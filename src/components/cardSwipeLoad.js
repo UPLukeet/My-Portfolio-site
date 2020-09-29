@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ViewCarouselIcon from '@material-ui/icons/ViewCarousel';
 import TouchAppIcon from '@material-ui/icons/TouchApp';
 

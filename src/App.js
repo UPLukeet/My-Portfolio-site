@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, BrowserRouter, Switch, useLocation } from 'react-router-dom';
+import { Route, BrowserRouter, Switch} from 'react-router-dom';
 
 //Pages/components
 import About from './components/About';
