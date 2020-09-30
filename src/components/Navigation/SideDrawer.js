@@ -14,9 +14,8 @@ const sideDrawer = props => {
         </div>
         <ul>
             <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/' exact activeClassName='current'><li>About</li></NavLink>
-            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/web-apps' activeClassName='current'><li>Web & App</li></NavLink>
-            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/game' activeClassName='current'><li>Games</li></NavLink>
-            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/adobe' activeClassName='current'><li>Adobe</li></NavLink>
+            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/Projects' activeClassName='current'><li>Projects</li></NavLink>
+            <NavLink className='noSelect' onClick={props.sidedrawerClickHandler} to='/Contact' activeClassName='current'><li>Contact</li></NavLink>
         </ul>
     </nav>);
 

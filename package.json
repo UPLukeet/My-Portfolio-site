@@ -14,11 +14,11 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-items-carousel": "^2.8.0",
     "react-player": "^2.6.2",
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "react-tinder-card": "^1.2.1",
     "ws": "^7.3.1"
   },
   "scripts": {

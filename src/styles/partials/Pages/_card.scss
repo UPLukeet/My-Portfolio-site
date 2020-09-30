@@ -4,11 +4,18 @@
     transition: transform 0.5s ease, opacity 0.6s ease;
     transform: translatey(150px);
     opacity: 0;
+
+.imYUvI{
+    .gwZiig{
+       height: 100vh;
+    }
+}
   }
   .card_transition.ease {
     transform: translatey(0);
     opacity: 1;
   }
+
 
 .cardStyles {
     height: 100vh;
@@ -19,7 +26,6 @@
 
     //styling for cards
     .Cards {
-        position: absolute;
         width: 85%;
         height: 85vh;
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2);
@@ -34,21 +40,12 @@
         display: flex;
         flex-direction: column;
 
-        //offsets cards
-        $OFFSET: 5px;
-
-        @for $i from 0 to 20 {
-            &:nth-child(#{$i + 1}) {
-                top: calc(#{$i} * #{$OFFSET});
-                z-index: calc(#{$i} * -1);
-            }
-        }
 
         //container for image/video box
         .image-iframeContainer {
             display: flex;
             width: 100%;
-            height: 100%;
+            flex-shrink: 1;
             flex-grow: 1;
             flex-basis: 0;
             background: #141c3a;

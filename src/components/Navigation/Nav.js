@@ -33,9 +33,8 @@ function Nav(props) {
                 <div className='toolbar_nav-items'>
                     <ul>
                     <NavLink className='noSelect' to='/' exact activeClassName='navCurrent'><li>About</li></NavLink>
-                    <NavLink className='noSelect' to='/web-apps' exact activeClassName='navCurrent'><li>Web & Apps</li></NavLink>
-                    <NavLink className='noSelect' to='/game' exact activeClassName='navCurrent'><li>Games</li></NavLink>
-                    <NavLink className='noSelect' to='/adobe' exact activeClassName='navCurrent'><li>Adobe</li></NavLink>
+                    <NavLink className='noSelect' to='/Projects' exact activeClassName='navCurrent'><li>Projects</li></NavLink>
+                    <NavLink className='noSelect' to='/Contact' exact activeClassName='navCurrent'><li>Contact</li></NavLink>
                     </ul>
                 </div>
             </nav>
