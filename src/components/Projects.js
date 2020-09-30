@@ -11,6 +11,7 @@ function Projects() {
 
     const [loading_animation, setloading_animation] = useState(false);
     const [slideShow, setSlideShow] = useState(true);
+    const [videoPlaying, setVideoPlaying] = useState(false);
     const [cardIndex, setCardIndex] = useState(0)
 
     useEffect(() => {
@@ -20,6 +21,14 @@ function Projects() {
             }, 100);
         }
     }, [loading_animation]);
+
+
+    useEffect(() => {
+       setSlideShow(true)
+       setVideoPlaying(false)
+       console.log('reset player')
+        console.log('slide changed')
+    }, [cardIndex]);
 
     const autoplayChange = () => {
         setSlideShow(!slideShow)
@@ -44,12 +53,12 @@ function Projects() {
                     numberOfCards={1}
                     slidesToScroll={1}
                     rightChevron={<ArrowForwardIosIcon className='forwardArrow'/>}
-                    leftChevron={<ArrowForwardIosIcon className='backArrow' transform="scale(-1)"/>}>
+                    leftChevron={<ArrowForwardIosIcon className='backArrow' transform="scale(-1,1)"/>}>
                     {Data.map((Projects, index) => {
                         return <div key={index} className='Cards'>
                             <Carousel className='childCarousel' showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
                                 {Projects.Images && Projects.Images.map((Image, index) => { return <div key={Image + index} className='image-iframeContainer'><img alt='Images of web apps' src={require("../assets/Card-images/" + Image)} /></div> })}
-                                {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video + index} className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
+                                {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video + index} className='image-iframeContainer'><ReactPlayer url={Video} muted={Projects.sound} playing={videoPlaying} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
                             </Carousel>
                             {Projects.webAddress && <div className='webButton'><LinkIcon onClick={() => { window.open(Projects.webAddress); }} /></div>}
                             <h1>{Projects.workName}</h1>
