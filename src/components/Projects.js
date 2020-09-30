@@ -36,10 +36,9 @@ function Projects() {
                 <ItemsCarousel className='masterCarousel'
                     requestToChangeActive={setCardIndex}
                     activeItemIndex={cardIndex}
-                    infiniteLoop={false}
+                    infiniteLoop={true}
                     activePosition={'center'}
                     disableSwipe={false}
-                    infiniteLoop={true}
                     showSlither={true}
                     numberOfCards={1}
                     slidesToScroll={1}
