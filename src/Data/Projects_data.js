@@ -8,7 +8,15 @@ export default[
         workTech: ['React.js, HTML, Sass, OpenStreetMap API, node.js'],
         videoAddress: ['https://www.youtube.com/watch?v=lV9Hv05uB54'],
         webAddress: 'https://arthur-conan.netlify.app/Map',
-        Images: ['ACD1.jpg', 'ACD2.jpg', 'ACD3.jpg', 'ACD4.jpg']
+        Images: ['ACD1.jpg', 'ACD2.jpg', 'ACD3.jpg', 'ACD4.jpg'],
+    },
+
+    {
+        workName: 'Tank destruction game',
+        workDescription: 'In this game you play as a tank and the aim is to destroy as many of the environmental elements as possible within the time limit to get the high score.',
+        workTech: ['Unity', 'C#'],
+        videoAddress: ['https://youtu.be/we6fGaKDPVA'],
+        Images: [],
     },
 
     {
@@ -17,7 +25,7 @@ export default[
         workTech: ['Bootstrap, PHP, Css, Javascript'],
         videoAddress: ['https://www.youtube.com/watch?v=oUimrYIhxLA'],
         webAddress: '',
-        Images: ['History1.png', 'History2.png', 'History3.png', 'History4.png', 'History5.png']
+        Images: ['History1.png', 'History2.png', 'History3.png', 'History4.png', 'History5.png'],
     },
 
     {
@@ -27,7 +35,15 @@ export default[
         workTech: ['React.js, HTML, Sass, Material-ui, Firebase, Firestore, node.js'],
         videoAddress: ['https://www.youtube.com/watch?v=-zuxYPJrlmw'],
         webAddress: 'https://simplyfit.netlify.app/',
-        Images: ['Simplyfit1.jpg', 'Simplyfit2.jpg', 'Simplyfit3.jpg', 'Simplyfit4.jpg', 'Simplyfit5.jpg']
+        Images: ['Simplyfit1.jpg', 'Simplyfit2.jpg', 'Simplyfit3.jpg', 'Simplyfit4.jpg', 'Simplyfit5.jpg'],
+    },
+
+    {
+        workName: 'Tardis VR puzzle',
+        workDescription: 'This is a Virtual reality game where you play as a man who has to help the doctor get his Tardis back by solving puzzles.',
+        workTech: ['Unreal engine'],
+        videoAddress: ['https://youtu.be/3m_d_zroqT4'],
+        Images: [],
     },
 
     {
@@ -36,7 +52,24 @@ export default[
         workTech: ['PhoneGapp, HTML, Css, Bootstrap, Javascript'],
         videoAddress: ['https://www.youtube.com/watch?v=TLEVkopN1Xk'],
         webAddress: '',
-        Images: ['Dirty1.jpg', 'Dirty2.jpg', 'Dirty3.jpg', 'Dirty4.jpg']
+        Images: ['Dirty1.jpg', 'Dirty2.jpg', 'Dirty3.jpg', 'Dirty4.jpg'],
+    },
+
+    {
+        workName: 'Switch up your "Grub" Motiongraphic',
+        workDescription: 'This is a motion graphic comparing the environmental and health effects of consuming animal products compared to insects as dietary source of protein.',
+        workTech: ['Adobe After effects'],
+        videoAddress: ['https://youtu.be/cloat51hzDY'],
+        Images: []
+    },
+
+
+    {
+        workName: 'Graphics and Designs',
+        workDescription: 'These are a selection of logos and graphics created by me.',
+        workTech: ['Adobe Illustrator'],
+        videoAddress: [],
+        Images: ['Mylogo.png', 'SFPoster.jpg', 'insectMotiongraphic.png'],
     },
 
 ]

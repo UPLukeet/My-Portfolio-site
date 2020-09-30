@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import ReactPlayer from 'react-player/youtube';
 import LinkIcon from '@material-ui/icons/Link';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 function Projects() {
 
@@ -42,12 +43,12 @@ function Projects() {
                     showSlither={true}
                     numberOfCards={1}
                     slidesToScroll={1}
-                    rightChevron={'>'}
-                    leftChevron={'<'}>
+                    rightChevron={<ArrowForwardIosIcon className='forwardArrow'/>}
+                    leftChevron={<ArrowForwardIosIcon className='backArrow' transform="scale(-1)"/>}>
                     {Data.map((Projects, index) => {
                         return <div key={index} className='Cards'>
                             <Carousel className='childCarousel' showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
-                                {Projects.Images && Projects.Images.map((Image, index) => { return <div key={Image + index} className='image-iframeContainer'><img alt='Images of web apps' src={require("../assets/Card-images/Web-Apps/" + Image)} /></div> })}
+                                {Projects.Images && Projects.Images.map((Image, index) => { return <div key={Image + index} className='image-iframeContainer'><img alt='Images of web apps' src={require("../assets/Card-images/" + Image)} /></div> })}
                                 {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video + index} className='image-iframeContainer'><ReactPlayer url={Video} muted={false} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
                             </Carousel>
                             {Projects.webAddress && <div className='webButton'><LinkIcon onClick={() => { window.open(Projects.webAddress); }} /></div>}
