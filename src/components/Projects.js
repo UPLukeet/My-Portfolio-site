@@ -43,7 +43,7 @@ function Projects() {
                     numberOfCards={1}
                     slidesToScroll={1}
                     rightChevron={<ArrowForwardIosIcon className='forwardArrow' />}
-                    leftChevron={<ArrowForwardIosIcon className='backArrow' transform="scale(-1,1)" />}>
+                    leftChevron={<ArrowForwardIosIcon className='backArrow' />}>
                     {Data.map((Projects, index) => {
                         return <div key={index} className='Cards'>
                             <Carousel className='childCarousel' showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
