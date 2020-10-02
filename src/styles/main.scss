@@ -1,3 +1,7 @@
+html, body, #root, .App {
+  height: 100%;
+}
+
 
 body {
   margin: 0;
@@ -6,12 +10,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.App_margin {
-  padding-top: 60px;
-}
-
 .App_space {
-display: flex;
+  height: 100%;
 }
 
 .text_transition {
@@ -48,6 +48,7 @@ display: flex;
     padding-top: 0;
   }
   .App_space {
+    display: flex;
     width: 75%;
     margin: 0;
   }
