@@ -44,11 +44,13 @@ function About() {
                     <h3>What I create:</h3>
                     <p>Websites, Web apps, Games, Infographics, minimalistic Illustrations, Wireframes/designs</p>
                     <h3>Tools I use:</h3>
-                    <li>React.js</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Github</li>
-                    <li>Netlify</li>
-                    <li>Adobe After Effects</li>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Github</li>
+                        <li>Netlify</li>
+                        <li>Adobe After Effects</li>
+                    </ul>
                 </div>
                 <div className={textTransition}>
                     <DevLogo />
@@ -57,14 +59,18 @@ function About() {
                     <h3>Languages I know:</h3>
                     <p>HTML, CSS, Sass, Javascript, C#, PHP, Kotlin</p>
                     <h3>Database Knowledge:</h3>
-                    <li>sql</li>
-                    <li>Firebase</li>
+                    <ul>
+                        <li>sql</li>
+                        <li>Firebase</li>
+                    </ul>
                     <h3>Development Environments I use:</h3>
-                    <li>Visual Studio code</li>
-                    <li>Linux/Command line</li>
-                    <li>Unity</li>
-                    <li>Unreal Engine</li>
-                    <li>Android Studio</li>
+                    <ul>
+                        <li>Visual Studio code</li>
+                        <li>Linux/Command line</li>
+                        <li>Unity</li>
+                        <li>Unreal Engine</li>
+                        <li>Android Studio</li>
+                    </ul>
                 </div>
             </div>
 

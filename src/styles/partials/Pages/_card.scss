@@ -26,7 +26,7 @@
                 transform: scale(-1,1);
                 transition: 0.3s ease-in;
                 color: #7510f7;
-                width: 14px;
+                width: 2.5vh;
                 height: auto;
                 border-radius: 50%;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -51,7 +51,7 @@
             svg {
                 transition: 0.3s ease-in;
                 color: #7510f7;
-                width: 14px;
+                width: 2.5vh;
                 height: auto;
                 border-radius: 50%;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -177,7 +177,7 @@
             width: 90%;
             color: white;
             text-align: center;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             margin-bottom: 0;
             margin-top: 0;
             background: none;
@@ -189,7 +189,8 @@
                 color: black;
                 width: 95%;
                 margin: auto;
-                font-size: 0.9rem;
+                font-size: 1rem;
+                padding: 2%;
             }
         }
 
@@ -236,14 +237,14 @@
             .dHQcjo {
                 svg {
                     padding: 5%;
-                    width: 22px;
+                    width: 2.3vh;
                 }
             }
 
             .aoTUt {
                 svg {
                     padding: 5%;
-                    width: 22px;
+                    width: 2.3vh;
                 }
             }
         }
@@ -251,7 +252,7 @@
 
     .cardStyles {
         .Cards {
-            margin-top: 5%;
+            margin-top: 10%;
         }
     }
 }
