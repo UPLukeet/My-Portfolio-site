@@ -100,11 +100,11 @@
             flex-shrink: 1;
             flex-grow: 1;
             flex-basis: 0;
+            height: 0;
             background: #141c3a;
             overflow: hidden;
 
             img {
-                display: -webkit-inline-box;
                 width: auto;
                 height: auto;
                 max-width: 100%;
