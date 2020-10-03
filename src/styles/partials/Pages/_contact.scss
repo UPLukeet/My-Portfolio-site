@@ -1,0 +1,95 @@
+.contactStyle {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .contactCard {
+        height: 85%;
+        width: 85%;
+        overflow: hidden;
+        transform: scale(0.25);
+        opacity: 0%;
+        margin: auto;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        margin-top: 12vh;
+        border-radius: 2.5px;
+        transition: all 0.5s ease-in-out;
+        .contactImage {
+            top: 0;
+            width: 100%;
+            height: 55%;
+            background: purple;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: 0% 0;
+            }
+        }
+        .contactLinks {
+            position: absolute;
+            float: right;
+            margin-top: -25px;
+            width: 100%;
+            svg {
+                float: right;
+                padding: 10px;
+                background-color: white;
+                border-radius: 50%;
+                margin-right: 5%;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+                cursor: pointer;
+            }
+            svg:active {
+                box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+            }
+        }
+    }
+    .contactCard.ease {
+        transform: scale(1);
+        opacity: 100%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .contactStyle {
+        .contactCard {
+            height: 90%;
+            width: 85%;
+            margin-top: auto;
+            .contactImage {
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .contactStyle {
+        .contactCard {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            .contactImage {
+                left: 0;
+                width: 55%;
+                height: 100%;
+                img{
+                    object-position: 0% 0;
+                }
+            }
+            .contactLinks {
+                bottom: 0;
+                left: 0;
+                margin-top: 0;
+                width: 55%;
+                margin-bottom: 4%;
+                svg {
+                    float: left;
+                    padding: 20px;
+                    margin-left: 5%;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
