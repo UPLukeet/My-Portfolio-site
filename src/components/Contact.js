@@ -31,7 +31,7 @@ function Contact() {
                     <img alt='Image of me for contact card' src={Filler}></img>
                 </div>
                 <div className='contactLinks'>
-                    <LinkedInIcon className='LinkedInSVG' /> <YouTubeIcon className='YoutubeSVG' /> <InstagramIcon className='InstagramSVG' />
+                    <LinkedInIcon className='LinkedInSVG' onClick={() => { window.open('https://www.linkedin.com/in/luke-ellul-turner-985028162/'); }}/> <YouTubeIcon className='YoutubeSVG' onClick={() => { window.open('https://www.youtube.com/channel/UC4JvFHCZcbB52ajG_BJPmww'); }}/> <InstagramIcon className='InstagramSVG' onClick={() => { window.open('https://www.instagram.com/lukeetwebdev/'); }}/>
                 </div>
                 <div className='contactInfoContainer'>
                     <div className='contactInfo Name'>
