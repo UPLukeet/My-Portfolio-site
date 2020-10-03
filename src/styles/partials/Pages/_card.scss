@@ -222,6 +222,7 @@
         .carousel.carousel-slider {
             .control-arrow {
                 opacity: 0%;
+                background: none;
                 -webkit-touch-callout: none;
                 -webkit-tap-highlight-color: transparent;
                 -webkit-user-select: none;
@@ -231,16 +232,16 @@
                 user-select: none;
             }
             .control-next {
-                padding-left: 10%;
+                padding-left: 40%;
                 padding-right: 5%;
             }
             .control-prev {
-                padding-right: 10%;
+                padding-right: 40%;
                 padding-left: 5%;
             }
             .control-arrow:active {
-                opacity: 80%;
-                transition: all .3s ease-in-out;
+                transition: 0.1s ease-in;
+                opacity: 100%;
             }
         }
     }
@@ -320,5 +321,11 @@
             }
     
         }
-    }
+        .carousel.carousel-slider {
+            .control-arrow:hover {
+                transition: .3s ease-in-out;
+                opacity: 80%;
+            }
+        }
+    }    
 }
