@@ -15,7 +15,7 @@ export default[
     {
         workName: 'Tank destruction game',
         workDescription: 'In this game you play as a tank and the aim is to destroy as many of the environmental elements as possible within the time limit to get the high score.',
-        workTech: ['Unity', 'C#'],
+        workTech: ['Unity, C#'],
         videoAddress: ['https://youtu.be/we6fGaKDPVA'],
         sound: false,
         Images: [],
