@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import Filler from '../assets/Card-images/TestImg.jpg';
+import Filler from '../assets/Contact-images/TestImg.jpg';
 import PersonIcon from '@material-ui/icons/Person';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
