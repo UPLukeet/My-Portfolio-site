@@ -229,7 +229,7 @@
 
         .carousel.carousel-slider {
             .control-arrow {
-                opacity: 0%;
+                opacity: 0;
                 background: none;
                 -webkit-touch-callout: none;
                 -webkit-tap-highlight-color: transparent;
@@ -249,7 +249,7 @@
             }
             .control-arrow:active {
                 transition: 0.1s ease-in;
-                opacity: 100%;
+                opacity: 1;
             }
         }
     }
