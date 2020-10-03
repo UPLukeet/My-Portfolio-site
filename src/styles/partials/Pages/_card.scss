@@ -37,7 +37,7 @@
             }
 
             svg:active {
-                transition: 0.2s ease-in;
+                transition: 0.1s ease-in;
                 color: white;
                 background: #7510f7;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -66,7 +66,7 @@
             }
 
             svg:active {
-                transition: 0.2s ease-in;
+                transition: 0.1s ease-in;
                 color: white;
                 background: #7510f7;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -96,7 +96,7 @@
         margin-top: 12vh;
         left: 0;
         right: 0;
-        border-radius: 7px;
+        border-radius: 4px;
         overflow: hidden;
         background: #7510f7;
         display: flex;
@@ -153,11 +153,18 @@
                 float: right;
                 margin-right: 5%;
                 cursor: pointer;
+                -webkit-touch-callout: none;
+                -webkit-tap-highlight-color: transparent;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
 
             }
 
             svg:active {
-                transition: 0.3s ease-in;
+                transition: 0.1s ease-in;
                 color: white;
                 background: #7510f7;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
