@@ -29,7 +29,7 @@ function About() {
                 </div>
                 <div className='aboutText'>
                     <img alt='me with laptop sat on a bench' className={elementTransition} src={MinimalMe} />
-                    <h2>Education</h2>
+                    <h2 className={textTransition}>Education</h2>
                     <p className={textTransition}>I learned my trade during my time at the University of Portsmouth where I studied Digital media(Bsc), in which I learned about varies digital technologies.</p>
                     <h2 className={textTransition}>Hobbies</h2>
                     <p className={textTransition}>One of my intrests is in technology I love to keep up with and read about the latest technologies released even if I can't afford them most the time, My main passion is health and fitness I love going to the gym, running, cycling along with this I enjoy cooking healthy meals.</p>

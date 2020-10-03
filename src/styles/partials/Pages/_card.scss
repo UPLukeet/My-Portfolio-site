@@ -35,9 +35,9 @@
                 border-radius: 50%;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
             }
-            svg:hover,
+
             svg:active {
-                transition: 0.3s ease-in;
+                transition: 0.2s ease-in;
                 color: white;
                 background: #7510f7;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -64,9 +64,9 @@
                 border-radius: 50%;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
             }
-            svg:hover,
+
             svg:active {
-                transition: 0.3s ease-in;
+                transition: 0.2s ease-in;
                 color: white;
                 background: #7510f7;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -140,8 +140,7 @@
             height: 5%;
             overflow: show;
             padding: 0;
-            z-index: 0;
-
+            
             svg {
                 width: 5vh;
                 height: auto;
@@ -153,19 +152,16 @@
                 border-radius: 50%;
                 float: right;
                 margin-right: 5%;
+                cursor: pointer;
+
             }
 
-            svg:hover,
             svg:active {
                 transition: 0.3s ease-in;
                 color: white;
                 background: #7510f7;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
             }
-        }
-
-        .test {
-            height: 300px;
         }
 
         //headings and text for the cards
@@ -225,7 +221,6 @@
 
         .carousel.carousel-slider {
             .control-arrow {
-                padding: 15%;
                 opacity: 0%;
                 -webkit-touch-callout: none;
                 -webkit-tap-highlight-color: transparent;
@@ -234,6 +229,18 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
+            }
+            .control-next {
+                padding-left: 10%;
+                padding-right: 5%;
+            }
+            .control-prev {
+                padding-right: 10%;
+                padding-left: 5%;
+            }
+            .control-arrow:active {
+                opacity: 80%;
+                transition: all .3s ease-in-out;
             }
         }
     }
@@ -273,6 +280,12 @@
                     height: 5.5vh;
                     padding: 22px;
                 }
+                svg:hover {
+                    transition: 0.2s ease-in;
+                    color: white;
+                    background: #7510f7;
+                    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+                }
             }
             .aoTUt {
                 margin-right: 8%;
@@ -280,6 +293,12 @@
                 svg {
                     height: 5.5vh;
                     padding: 22px;
+                }
+                svg:hover {
+                    transition: 0.2s ease-in;
+                    color: white;
+                    background: #7510f7;
+                    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
                 }
             }
         }
@@ -290,6 +309,16 @@
             margin-top: 1%;
             width: 60%;
             height: 95%;
+
+            .webButton {
+                svg:hover {
+                    transition: 0.3s ease-in;
+                    color: white;
+                    background: #7510f7;
+                    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+                }
+            }
+    
         }
     }
 }
