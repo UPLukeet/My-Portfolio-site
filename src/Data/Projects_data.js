@@ -4,8 +4,8 @@ export default[
 
     {
         workName: 'The life of ACD',
-        workDescription: 'This was developed while working for the Arthur Conan Doyle foundation based in Portsmouth. Its is a maps base app which shows the life events of Arthur Conan Doyle(Author of the Sherlock Holmes books) within portsmouth.',
-        workTech: ['React.js, HTML, Sass, OpenStreetMap API, node.js'],
+        workDescription: 'This was developed whilst working for the Arthur Conan Doyle foundation based in Portsmouth. It is a maps based app which shows the life events of Arthur Conan Doyle(Author of the Sherlock Holmes books) within portsmouth.',
+        workTech: ['React.js, HTML, Sass, OpenStreetMap API, Node.js, Javascript'],
         videoAddress: ['https://www.youtube.com/watch?v=lV9Hv05uB54'],
         sound: true,
         webAddress: 'https://arthur-conan.netlify.app/Map',
@@ -14,7 +14,7 @@ export default[
 
     {
         workName: 'Tank destruction game',
-        workDescription: 'In this game you play as a tank and the aim is to destroy as many of the environmental elements as possible within the time limit to get the high score.',
+        workDescription: 'The aim of the game is to destroy as many of the environmental objects as possible within the time limit to get the highest score possible.',
         workTech: ['Unity, C#'],
         videoAddress: ['https://youtu.be/we6fGaKDPVA'],
         sound: false,
@@ -23,7 +23,7 @@ export default[
 
     {
         workName: 'HistoryLens',
-        workDescription: 'HistoryLens is an educational history web site taking inspiration from sites such as BBC history. It was developed with a friend as part of a group project at university.',
+        workDescription: 'HistoryLens is an educational history website taking inspiration from sites such as BBC history. It was developed with a friend as part of a group project at University.',
         workTech: ['Bootstrap, PHP, Css, Javascript'],
         videoAddress: ['https://www.youtube.com/watch?v=oUimrYIhxLA'],
         sound: true,
@@ -34,7 +34,7 @@ export default[
     {
 
         workName: 'Simplyfit',
-        workDescription: 'Simplyfit is a mobile app developed with the intention of helping people create tailor made meal plans. The app was developed for my final year project at university.',
+        workDescription: 'Simplyfit is a mobile app developed with the intention of helping people create tailor made meal plans. The app was developed for my dissertation at University.',
         workTech: ['React.js, HTML, Sass, Material-ui, Firebase, Firestore, node.js'],
         videoAddress: ['https://www.youtube.com/watch?v=-zuxYPJrlmw'],
         sound: true,
@@ -53,7 +53,7 @@ export default[
 
     {
         workName: 'Dirty Pint',
-        workDescription: 'Dirty Pint is a fun drinking game where players can enter in a drink of their choice and disgusting mixer is displayed along with a pun.',
+        workDescription: 'Dirty Pint is a fun drinking game where players can enter in a drink of their choice and a disgusting mixer is displayed along with a pun.',
         workTech: ['PhoneGapp, HTML, Css, Bootstrap, Javascript'],
         videoAddress: ['https://www.youtube.com/watch?v=TLEVkopN1Xk'],
         sound: true,
@@ -63,8 +63,8 @@ export default[
 
     {
         workName: 'Switch up your "Grub" Motiongraphic',
-        workDescription: 'This is a motion graphic comparing the environmental and health effects of consuming animal products compared to insects as dietary source of protein.',
-        workTech: ['Adobe After effects'],
+        workDescription: 'This is a motion graphic comparing the environmental and health effects of consuming animal products. While showing the benefits of consuming insects as an alternative dietary source of protein.',
+        workTech: ['Adobe After effects, Adobe Illustrator'],
         videoAddress: ['https://youtu.be/cloat51hzDY'],
         sound: false,
         Images: []

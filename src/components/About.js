@@ -29,10 +29,13 @@ function About() {
                 </div>
                 <div className='aboutText'>
                     <img alt='me with laptop sat on a bench' className={elementTransition} src={MinimalMe} />
+                    <h2 className={textTransition}>Introduction</h2>
+                    <p className={textTransition}>Hi I'm Luke a Graduate developer who's enthusiastic to get started in the industry. You can see me above, I do have a face I promise!</p>
                     <h2 className={textTransition}>Education</h2>
-                    <p className={textTransition}>I learned my trade during my time at the University of Portsmouth where I studied Digital media(Bsc), in which I learned about varies digital technologies.</p>
+                    <p className={textTransition}>I achieved a 2:1 in Digital media(Bsc) from the University of Portsmouth, where I enjoyed learning about a wide variety of technologies choosing to specialise in React web development.</p>
+                    <p className={textTransition}></p>
                     <h2 className={textTransition}>Hobbies</h2>
-                    <p className={textTransition}>One of my intrests is in technology I love to keep up with and read about the latest technologies released even if I can't afford them most the time, My main passion is health and fitness I love going to the gym, running, cycling along with this I enjoy cooking healthy meals.</p>
+                    <p className={textTransition}>Technology is one of my passions. I love learning and keeping up to date with the latest technologies. I am a health and fitness enthusiast who is mad about Power-lifting, running, cycling and anything outdoors. I also enjoy cooking anything spicy the hotter the better!</p>
                 </div>
             </div>
 
@@ -40,12 +43,15 @@ function About() {
                 <div className={textTransition}>
                     <DesignLogo />
                     <h2>What I create</h2>
-                    <p>I am passionate about building great things using the latest technologies available, here are some the things I enjoy making.</p>
-                    <h3>What I create:</h3>
+                    <p>I am passionate about building great things using the latest technologies available, here are some of the things I enjoy making.</p>
+                    <h3>Things I make:</h3>
                     <p>Websites, Web apps, Games, Infographics, minimalistic Illustrations, Wireframes/designs</p>
                     <h3>Tools I use:</h3>
                     <ul>
                         <li>React.js</li>
+                        <li>Node</li>
+                        <li>Git</li>
+                        <li>Github</li>
                         <li>Adobe Illustrator</li>
                         <li>Github</li>
                         <li>Netlify</li>
