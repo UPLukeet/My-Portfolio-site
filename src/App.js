@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, BrowserRouter, Switch} from 'react-router-dom';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 //Pages/components
 import About from './components/About';
@@ -14,34 +14,34 @@ function App() {
   //sets state  of the sidedrawer
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
-const drawerToggleClickHandler = () => {
-  setSideDrawerOpen(!sideDrawerOpen);
-};
+  const drawerToggleClickHandler = () => {
+    setSideDrawerOpen(!sideDrawerOpen);
+  };
 
-const sideDrawerCloseHandler = () => {
-  setSideDrawerOpen(false);
-};
+  const sideDrawerCloseHandler = () => {
+    setSideDrawerOpen(false);
+  };
 
 
-return (
-  <div className="App">
+  return (
     <BrowserRouter>
-      <div className='Nav_space'>
-        <Nav drawerClickHandler={drawerToggleClickHandler} />
-      </div>
-      <SideDrawer sidedrawerClickHandler={sideDrawerCloseHandler} show={sideDrawerOpen} />
-      {sideDrawerOpen && (<Backdrop click={sideDrawerCloseHandler} />)}
-      <div className='App_space'>
-        <Switch >
-          <Route path='/' component={About} exact />
-          <Route path='/Projects' component={Projects} />
-          <Route path='/Contact' component={Contact} />
-        </Switch>
-      </div>
-    </BrowserRouter>
+      <Switch >
+        <div className="App">
+          <div className='Nav_space'>
+            <Nav drawerClickHandler={drawerToggleClickHandler} />
+          </div>
+          <SideDrawer sidedrawerClickHandler={sideDrawerCloseHandler} show={sideDrawerOpen} />
+          {sideDrawerOpen && (<Backdrop click={sideDrawerCloseHandler} />)}
+          <div className='App_space'>
 
-  </div>
-);
+            <Route path='/' component={About} exact />
+            <Route path='/Projects' component={Projects} />
+            <Route path='/Contact' component={Contact} />
+          </div>
+        </div>
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;
