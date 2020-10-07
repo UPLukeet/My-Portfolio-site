@@ -42,14 +42,14 @@ function Contact() {
                         <AssignmentIcon />
                         <p>Web developer, Programmer and digital Illustrator</p>
                     </div>
-                    <div className='contactInfo Email'>
+                    <a className='contactInfo Email' href="mailto: lukeetwebdev@gmail.com">
                         <EmailIcon />
                         <p>lukeetwebdev@gmail.com</p>
-                    </div>
-                    <div className='contactInfo Number'>
+                    </a>
+                    <a className='contactInfo Number' href="tel:07516 619581">
                         <PhoneIcon />
                         <p>07516 619581</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

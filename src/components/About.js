@@ -49,13 +49,13 @@ function About() {
                     <h3>Tools I use:</h3>
                     <ul>
                         <li>React.js</li>
-                        <li>Node</li>
+                        <li>Node.js</li>
                         <li>Git</li>
                         <li>Github</li>
                         <li>Adobe Illustrator</li>
-                        <li>Github</li>
                         <li>Netlify</li>
                         <li>Adobe After Effects</li>
+                        <li>Agile Development</li>
                     </ul>
                 </div>
                 <div className={textTransition}>
@@ -66,8 +66,9 @@ function About() {
                     <p>HTML, CSS, Sass, Javascript, C#, PHP, Kotlin</p>
                     <h3>Database Knowledge:</h3>
                     <ul>
-                        <li>sql</li>
+                        <li>SQL</li>
                         <li>Firebase</li>
+                        <li>Json</li>
                     </ul>
                     <h3>Development Environments I use:</h3>
                     <ul>
