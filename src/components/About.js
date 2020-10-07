@@ -29,7 +29,7 @@ function About() {
                 </div>
                 <div className='aboutText'>
                     <img alt='me with laptop sat on a bench' className={elementTransition} src={MinimalMe} />
-                    <h2 className={textTransition}>Introduction</h2>
+                    <h2 className={textTransition + ' aboutTopHead'} >Introduction</h2>
                     <p className={textTransition}>Hi I'm Luke a Graduate developer who's enthusiastic to get started in the industry. You can see me above, I do have a face I promise!</p>
                     <h2 className={textTransition}>Education</h2>
                     <p className={textTransition}>I achieved a 2:1 in Digital media(Bsc) from the University of Portsmouth, where I enjoyed learning about a wide variety of technologies choosing to specialise in React web development.</p>
