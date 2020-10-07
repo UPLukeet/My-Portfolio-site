@@ -9,23 +9,20 @@
         opacity: 0;
         position: relative;
         width: 100%;
-        margin-top: 12%;
 
         .aboutHead {
             position: relative;
             width: 100%;
-            height: 20vh;
+            padding-top: 18%;
+            padding-bottom: 15%;
             background: #7510f7;
             h1 {
                 margin: 0;
-                padding-top: 7%;
                 font-size: 2rem;
                 color: white;
                 text-align: center;
             }
         }
-
-       
 
         .aboutText {
             position: relative;
@@ -38,8 +35,8 @@
             background: white;
             border-radius: 12px;
             img {
-                margin-top: -10.5vh;
-                margin-left: -4.5vh;
+                margin-top: -20%;
+                margin-left: -9%;
                 width: 32%;
                 padding: none;
                 margin-right: 50%;
@@ -47,13 +44,18 @@
             h2 {
                 color: #7510f7;
                 text-align: center;
+                margin-bottom: 1%;
             }
             p {
                 padding-left: 2%;
                 padding-right: 2%;
-                margin-bottom: 6%;
+                margin-bottom: 5%;
+                margin-top: 0;
                 text-align: center;
                 color: rgba(10, 10, 10, 0.9);
+            }
+            .aboutTopHead {
+                margin-top: -4%;
             }
         }
     }
@@ -85,13 +87,13 @@
                 margin-bottom: 2%;
             }
 
-            ul{
+            ul {
                 padding: 0;
                 li {
                     list-style-type: none;
                 }
             }
-           
+
             h3 {
                 color: #7510f7;
                 margin-bottom: 0;
@@ -112,16 +114,19 @@
 @media only screen and (min-width: 640px) {
     .aboutStyles {
         .aboutContainer {
-            margin-top: 0;
             .aboutHead {
-                height: 25vh;
+                padding-top: 8%;
+                padding-bottom: 8%;
+                h1 {
+                    font-size: 2.5rem;
+                }
             }
 
             .aboutText {
                 margin-top: -3%;
                 img {
-                    margin-top: -20%;
-                    width: 28%;
+                    margin-top: -16%;
+                    width: 22%;
                     margin-left: 0;
                 }
             }
@@ -145,7 +150,7 @@
 
 @media only screen and (min-width: 1025px) {
     .aboutStyles {
-        height: 100vh;
+        height: 100%;
         flex-direction: row;
         overflow: hidden;
         .aboutContainer {
@@ -155,10 +160,8 @@
             margin-left: 2%;
             display: flex;
             flex-direction: column;
-           
 
             .aboutHead {
-                height: 20%;
                 margin-top: none;
                 border-radius: 3px;
                 display: flex;
@@ -186,12 +189,13 @@
                 }
                 p {
                     margin: 0;
-                    margin-bottom: auto;
-                    font-size: 1rem;
+                    font-size: 1vw;
                     padding-left: 3%;
                     padding-right: 3%;
+                    flex-shrink: 1;
                 }
-                .aboutTopHead{
+
+                .aboutTopHead {
                     margin-top: -5%;
                 }
             }
