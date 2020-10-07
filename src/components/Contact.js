@@ -44,11 +44,11 @@ function Contact() {
                     </div>
                     <a className='contactInfo Email' href="mailto: lukeetwebdev@gmail.com">
                         <EmailIcon />
-                        <p>lukeetwebdev@gmail.com</p>
+                        <p>Email me at lukeetwebdev@gmail.com</p>
                     </a>
                     <a className='contactInfo Number' href="tel:07516 619581">
                         <PhoneIcon />
-                        <p>07516 619581</p>
+                        <p>Contact me on 07516 619581</p>
                     </a>
                 </div>
             </div>
