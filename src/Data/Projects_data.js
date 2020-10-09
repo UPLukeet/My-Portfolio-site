@@ -18,7 +18,7 @@ export default[
         workTech: ['Unity, C#'],
         videoAddress: ['https://youtu.be/we6fGaKDPVA'],
         sound: false,
-        Images: [],
+        Images: ['Tank1.png', 'Tank2.png', 'Tank3.png', 'Tank4.png'],
     },
 
     {

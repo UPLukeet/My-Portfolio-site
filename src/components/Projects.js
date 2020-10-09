@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import ReactPlayer from 'react-player/youtube';
 import LinkIcon from '@material-ui/icons/Link';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ProgressiveImage from 'react-progressive-image';
 
 function Projects() {
 
@@ -47,7 +48,15 @@ function Projects() {
                     {Data.map((Projects, index) => {
                         return <div key={index} className='Cards'>
                             <Carousel className='childCarousel' showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
-                                {Projects.Images && Projects.Images.map((Image, index) => { return <div key={Image + index} className='image-iframeContainer'><img alt='Images of web apps' src={require("../assets/Card-images/" + Image)} /></div> })}
+                                {Projects.Images && Projects.Images.map((Image, index) => {
+                                    return <div key={Image + index} className='image-iframeContainer'>
+                                            <ProgressiveImage src={require("../assets/Card-images/" + Image)} placeholder={require("../assets/Card-images/" + Image)}>
+                                                {(src, loading) => (
+                                                    <img style={{ opacity: loading ? 0.5 : 1 }} src={src} alt="projects" />
+                                                )}
+                                            </ProgressiveImage>
+                                    </div>
+                                })}
                                 {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video + index} className='image-iframeContainer'><ReactPlayer url={Video} muted={Projects.sound} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
                             </Carousel>
                             {Projects.webAddress && <div className='webButton'><LinkIcon onClick={() => { window.open(Projects.webAddress); }} /></div>}

@@ -7,6 +7,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import ProgressiveImage from 'react-progressive-image';
 
 function Contact() {
     const [loading_animation, setloading_animation] = useState(false);
@@ -28,10 +29,12 @@ function Contact() {
         <div className='contactStyle'>
             <div className={cardTransition}>
                 <div className='contactImage'>
-                    <img alt='Me' src={Filler}></img>
+                    <ProgressiveImage src={Filler} placeholder={Filler}>
+                        {src => <img src={src} alt="Me" />}
+                    </ProgressiveImage>
                 </div>
                 <div className='contactLinks'>
-                    <LinkedInIcon className='LinkedInSVG' onClick={() => { window.open('https://www.linkedin.com/in/luke-ellul-turner-985028162/'); }}/> <YouTubeIcon className='YoutubeSVG' onClick={() => { window.open('https://www.youtube.com/channel/UC4JvFHCZcbB52ajG_BJPmww'); }}/> <InstagramIcon className='InstagramSVG' onClick={() => { window.open('https://www.instagram.com/lukeetwebdev/'); }}/>
+                    <LinkedInIcon className='LinkedInSVG' onClick={() => { window.open('https://www.linkedin.com/in/luke-ellul-turner-985028162/'); }} /> <YouTubeIcon className='YoutubeSVG' onClick={() => { window.open('https://www.youtube.com/channel/UC4JvFHCZcbB52ajG_BJPmww'); }} /> <InstagramIcon className='InstagramSVG' onClick={() => { window.open('https://www.instagram.com/lukeetwebdev/'); }} />
                 </div>
                 <div className='contactInfoContainer'>
                     <div className='contactInfo Name'>

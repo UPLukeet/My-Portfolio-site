@@ -16,6 +16,7 @@
     "react-dom": "^16.13.1",
     "react-items-carousel": "^2.8.0",
     "react-player": "^2.6.2",
+    "react-progressive-image": "^0.6.0",
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",

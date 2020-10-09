@@ -113,15 +113,15 @@
             background: #141c3a;
             overflow: hidden;
 
-            img {
-                width: auto;
-                height: auto;
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: cover;
-                background-repeat: no-repeat;
-                margin: auto;
-            }
+                img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                    background-repeat: no-repeat;
+                    margin: auto;
+                }
 
             iframe {
                 position: absolute;
@@ -141,7 +141,7 @@
             height: 5%;
             overflow: show;
             padding: 0;
-            
+
             svg {
                 width: 5vh;
                 height: auto;
@@ -161,7 +161,6 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
-
             }
 
             svg:active {
@@ -286,7 +285,7 @@
 
             .descriptionContainer {
                 .description {
-                   font-size: 1.1rem;
+                    font-size: 1.1rem;
                 }
             }
         }
@@ -341,13 +340,12 @@
                     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
                 }
             }
-    
         }
         .carousel.carousel-slider {
             .control-arrow:hover {
-                transition: .3s ease-in-out;
-                opacity: .8;
+                transition: 0.3s ease-in-out;
+                opacity: 0.8;
             }
         }
-    }    
+    }
 }
