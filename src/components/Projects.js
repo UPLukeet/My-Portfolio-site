@@ -50,7 +50,7 @@ function Projects() {
                             <Carousel className='childCarousel' showThumbs={false} infiniteLoop={true} swipeable={false} emulateTouch={false} showStatus={false} autoPlay={slideShow} dynamicHeight={false}>
                                 {Projects.Images && Projects.Images.map((Image, index) => {
                                     return <div key={Image + index} className='image-iframeContainer'>
-                                            <ProgressiveImage src={require("../assets/Card-images/" + Image)} placeholder={require("../assets/Card-images/" + Image)}>
+                                            <ProgressiveImage src={require("../assets/Card-images/" + Image)} placeholder={require("../assets/Card-images-Placeholder/" + Image)}>
                                                 {(src, loading) => (
                                                     <img style={{ opacity: loading ? 0.5 : 1 }} src={src} alt="projects" />
                                                 )}

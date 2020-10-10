@@ -18,7 +18,7 @@ export default[
         workTech: ['Unity, C#'],
         videoAddress: ['https://youtu.be/we6fGaKDPVA'],
         sound: false,
-        Images: ['Tank1.png', 'Tank2.png', 'Tank3.png', 'Tank4.png'],
+        Images: ['Tank1.jpg', 'Tank2.jpg', 'Tank3.jpg', 'Tank4.jpg'],
     },
 
     {
@@ -28,7 +28,7 @@ export default[
         videoAddress: ['https://www.youtube.com/watch?v=oUimrYIhxLA'],
         sound: true,
         webAddress: '',
-        Images: ['History1.png', 'History2.png', 'History3.png', 'History4.png', 'History5.png'],
+        Images: ['History1.jpg', 'History2.jpg', 'History3.jpg', 'History4.jpg', 'History5.jpg'],
     },
 
     {
@@ -77,7 +77,7 @@ export default[
         workTech: ['Adobe Illustrator'],
         videoAddress: [],
         sound: false,
-        Images: ['Mylogo.png', 'SFPoster.jpg', 'insectMotiongraphic.png'],
+        Images: ['Mylogo.jpg', 'SFPoster.jpg', 'insectMotiongraphic.jpg'],
     },
 
 ]
