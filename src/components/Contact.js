@@ -31,7 +31,9 @@ function Contact() {
             <div className={cardTransition}>
                 <div className='contactImage'>
                     <ProgressiveImage src={Filler} placeholder={FillerPlaceholder}>
-                        {src => <img src={src} alt="Me" />}
+                        {(src, loading) => (
+                            <img style={{ opacity: loading ? 0.5 : 1 }} src={src} alt="Me" />
+                        )}
                     </ProgressiveImage>
                 </div>
                 <div className='contactLinks'>
