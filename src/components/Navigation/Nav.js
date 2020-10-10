@@ -28,7 +28,7 @@ function Nav(props) {
                 <div className='nav-drawer-button'>
                     <DrawerButton click={props.drawerClickHandler} />
                 </div>
-                <div className='toolbar_logo'><li>My Portfolio</li></div>
+                <div className='toolbar_logo'><li>Lukeet Webdev Portfolio</li></div>
                 <div className='spacer'/>
                 <div className='toolbar_nav-items'>
                     <ul>
