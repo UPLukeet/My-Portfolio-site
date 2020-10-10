@@ -52,12 +52,12 @@ function Projects() {
                                     return <div key={Image + index} className='image-iframeContainer'>
                                             <ProgressiveImage src={require("../assets/Card-images/" + Image)} placeholder={require("../assets/Card-images-Placeholder/" + Image)}>
                                                 {(src, loading) => (
-                                                    <img style={{ opacity: loading ? 0.5 : 1 }} src={src} alt="projects" />
+                                                    <img loading="lazy" style={{ filter: loading ? "blur(5px)" : "blur(0px)" }} src={src} alt="projects" />
                                                 )}
                                             </ProgressiveImage>
                                     </div>
                                 })}
-                                {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video + index} className='image-iframeContainer'><ReactPlayer url={Video} muted={Projects.sound} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
+                                {Projects.videoAddress && Projects.videoAddress.map((Video, index) => { return <div key={Video + index} className='image-iframeContainer'><ReactPlayer light={true} width='100%' height='100%' url={Video} muted={Projects.sound} controls={false} onPlay={autoplayChange} onPause={autoplayChange} onEnded={autoplayChange} /></div> })}
                             </Carousel>
                             {Projects.webAddress && <div className='webButton'><LinkIcon onClick={() => { window.open(Projects.webAddress); }} /></div>}
                             <h1>{Projects.workName}</h1>

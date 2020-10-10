@@ -114,6 +114,7 @@
             overflow: hidden;
 
                 img {
+                    transition: all .5s;
                     width: auto;
                     height: auto;
                     max-width: 100%;

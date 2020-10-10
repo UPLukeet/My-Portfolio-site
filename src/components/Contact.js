@@ -32,7 +32,7 @@ function Contact() {
                 <div className='contactImage'>
                     <ProgressiveImage src={Filler} placeholder={FillerPlaceholder}>
                         {(src, loading) => (
-                            <img style={{ opacity: loading ? 0.5 : 1 }} src={src} alt="Me" />
+                            <img style={{  filter: loading ? "blur(5px)" : "blur(0px)" }} src={src} alt="Me" />
                         )}
                     </ProgressiveImage>
                 </div>
