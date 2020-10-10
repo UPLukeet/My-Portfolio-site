@@ -18,7 +18,7 @@
             background: #7510f7;
             h1 {
                 margin: 0;
-                font-size: 2rem;
+                font-size: 5.5vh;
                 color: white;
                 text-align: center;
             }
@@ -42,6 +42,7 @@
                 margin-right: 50%;
             }
             h2 {
+                font-size: 3vh;
                 color: #7510f7;
                 text-align: center;
                 margin-bottom: 1%;
@@ -52,6 +53,7 @@
                 margin-bottom: 5%;
                 margin-top: 0;
                 text-align: center;
+                font-size: 2.3vh;
                 color: rgba(10, 10, 10, 0.9);
             }
             .aboutTopHead {
@@ -85,24 +87,31 @@
 
             h2 {
                 margin-bottom: 2%;
+                font-size: 3.2vh;
+            }
+
+            p{
+                font-size: 2.3vh;
             }
 
             ul {
                 padding: 0;
                 li {
                     list-style-type: none;
+                    font-size: 2vh;
                 }
             }
 
             h3 {
                 color: #7510f7;
                 margin-bottom: 0;
+                font-size: 3vh;
             }
             svg {
                 padding-top: 20%;
                 align-self: center;
-                width: 20%;
-                height: auto;
+                height: 10vh;
+                width: auto;
             }
         }
     }
@@ -117,9 +126,6 @@
             .aboutHead {
                 padding-top: 8%;
                 padding-bottom: 8%;
-                h1 {
-                    font-size: 2.5rem;
-                }
             }
 
             .aboutText {
@@ -140,8 +146,8 @@
                 height: max-content;
                 svg {
                     padding-top: 30%;
-                    height: 60px;
-                    width: 60px;
+                    height: 7vh;
+                    width: auto;
                 }
             }
         }
@@ -169,7 +175,7 @@
                     padding: 0;
                     margin-top: 3%;
                     margin: auto;
-                    font-size: 2.5rem;
+                    font-size: 4.5vh;
                 }
             }
 
@@ -185,15 +191,17 @@
                     width: 20%;
                 }
                 h2 {
+                    font-size: 3vh;
                     margin-bottom: 1%;
                 }
                 p {
                     margin: 0;
-                    font-size: 1vw;
+                    font-size: 2vh;
                     padding-left: 3%;
                     padding-right: 3%;
                     flex-shrink: 1;
                 }
+               
 
                 .aboutTopHead {
                     margin-top: -5%;
@@ -213,10 +221,24 @@
                 height: auto;
                 svg {
                     padding-top: 15%;
-                    height: 70px;
-                    min-height: 60px;
-                    width: 70px;
+                    height: 7vh;
+                    width: auto;
                 }
+                ul {
+                    li {
+                       font-size: 2vh;
+                    }
+                }
+                p {
+                    font-size: 2vh;
+                }
+                h2 {
+                    font-size: 3vh;
+                }
+                h3 {
+                    font-size: 2.5vh;
+                }
+
             }
         }
     }
