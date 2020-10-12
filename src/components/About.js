@@ -55,7 +55,7 @@ function About() {
                         <li>Adobe Illustrator</li>
                         <li>Netlify</li>
                         <li>Adobe After Effects</li>
-                        <li>Agile Development</li>
+                        <li>Scrum/Agile Development</li>
                     </ul>
                 </div>
                 <div className={textTransition}>
