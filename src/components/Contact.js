@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import Filler from '../assets/Contact-images/TestImg.jpg';
 import FillerPlaceholder from '../assets/Contact-images/TestImg-placeholder.jpg';
 import PersonIcon from '@material-ui/icons/Person';
@@ -37,7 +38,7 @@ function Contact() {
                     </ProgressiveImage>
                 </div>
                 <div className='contactLinks'>
-                    <LinkedInIcon className='LinkedInSVG' onClick={() => { window.open('https://www.linkedin.com/in/luke-ellul-turner-985028162/'); }} /> <YouTubeIcon className='YoutubeSVG' onClick={() => { window.open('https://www.youtube.com/channel/UC4JvFHCZcbB52ajG_BJPmww'); }} /> <InstagramIcon className='InstagramSVG' onClick={() => { window.open('https://www.instagram.com/lukeetwebdev/'); }} />
+                    <LinkedInIcon className='LinkedInSVG' onClick={() => { window.open('https://www.linkedin.com/in/luke-ellul-turner-985028162/'); }} /> <GitHubIcon className='GitHubSVG' onClick={() => { window.open('https://github.com/UPLukeet'); }} /> <YouTubeIcon className='YoutubeSVG' onClick={() => { window.open('https://www.youtube.com/channel/UC4JvFHCZcbB52ajG_BJPmww'); }} /> <InstagramIcon className='InstagramSVG' onClick={() => { window.open('https://www.instagram.com/lukeetwebdev/'); }} />
                 </div>
                 <div className='contactInfoContainer'>
                     <div className='contactInfo Name'>

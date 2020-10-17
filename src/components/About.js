@@ -30,12 +30,12 @@ function About() {
                 <div className='aboutText'>
                     <img alt='me with laptop sat on a bench' className={elementTransition} src={MinimalMe} />
                     <h2 className={textTransition + ' aboutTopHead'} >Introduction</h2>
-                    <p className={textTransition}>Hi I'm Luke a Graduate developer who's enthusiastic to get started in the industry. You can see me above, I do have a face I promise!</p>
+                    <p className={textTransition}>Hi, I'm Luke: a Graduate developer who's enthusiastic to get started in the industry. You can see me above, I do have a face I promise!</p>
                     <h2 className={textTransition}>Education</h2>
-                    <p className={textTransition}>I achieved a 2:1 in Digital media(Bsc) from the University of Portsmouth, where I enjoyed learning about a wide variety of technologies choosing to specialise in React web development.</p>
+                    <p className={textTransition}>I achieved a 2:1in my B.Sc in Digital media from the University of Portsmouth. While I was there I enjoyed learning about a wide variety of technologies, choosing to specialise in React web development.</p>
                     <p className={textTransition}></p>
                     <h2 className={textTransition}>Hobbies</h2>
-                    <p className={textTransition}>Technology is one of my passions. I love learning and keeping up to date with the latest technologies. I am a health and fitness enthusiast who is mad about Power-lifting, running, cycling and anything outdoors. I also enjoy cooking anything spicy the hotter the better!</p>
+                    <p className={textTransition}>Technology is one of my passions. I love learning, and keeping up to date with the latest technologies. I am a health and fitness enthusiast who is mad about Power-lifting, running, cycling and anything outdoors. I also enjoy cooking anything spicy - the hotter the better!</p>
                 </div>
             </div>
 
@@ -56,6 +56,7 @@ function About() {
                         <li>Netlify</li>
                         <li>Adobe After Effects</li>
                         <li>Scrum/Agile Development</li>
+                        <li>JSON</li>
                     </ul>
                 </div>
                 <div className={textTransition}>
@@ -68,7 +69,6 @@ function About() {
                     <ul>
                         <li>SQL</li>
                         <li>Firebase</li>
-                        <li>Json</li>
                     </ul>
                     <h3>Development Environments I use:</h3>
                     <ul>
